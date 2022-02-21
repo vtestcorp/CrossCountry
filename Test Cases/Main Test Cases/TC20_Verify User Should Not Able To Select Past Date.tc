@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC20_Verify User Should Not Able To Select Past Date</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>20d6c6b1-dac7-4474-8013-2bc003163ee7</testCaseGuid>
+</TestCaseEntity>

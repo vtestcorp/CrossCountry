@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC22_Verify the Go to HomePage Functionality</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>cb1069c7-ae7e-4e7a-aea3-70c1d390edb1</testCaseGuid>
+</TestCaseEntity>

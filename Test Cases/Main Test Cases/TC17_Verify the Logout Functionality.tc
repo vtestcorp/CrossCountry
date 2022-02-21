@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC17_Verify the Logout Functionality</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e9f01f02-7f85-4c9c-aa1e-9c6d6a7c25f7</testCaseGuid>
+</TestCaseEntity>
