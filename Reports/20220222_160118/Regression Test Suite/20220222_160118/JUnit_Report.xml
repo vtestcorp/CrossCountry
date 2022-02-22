@@ -1,0 +1,1435 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Regression Test Suite" time="404.684" tests="20" failures="1" errors="1">
+   <testsuite name="Regression Test Suite" tests="20" failures="1" errors="1" time="404.684" skipped="0" timestamp="2022-02-22 16:01:32" hostname="LENOVO - DESKTOP-TMI6UL6" id="Test Suites/Regression Test Suite">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\LENOVO\\git\\CrossCountry\\Reports\\20220222_160118\\Regression Test Suite\\20220222_160118"/>
+         <property name="logFiles" value="C:\\Users\\LENOVO\\git\\CrossCountry\\Reports\\20220222_160118\\Regression Test Suite\\20220222_160118\\execution0.log"/>
+         <property name="attachments" value="keyes\keyes-login page.png, keyes\keyes-appointment page.png, keyes\keyes-booked appointment.png, C:\\Users\\LENOVO\\git\\CrossCountry\\Reports\\20220222_160118\\Regression Test Suite\\20220222_160118\\1645525943745.png"/>
+         <property name="hostName" value="LENOVO - DESKTOP-TMI6UL6"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="8.2.5.208"/>
+         <property name="browser" value="Chrome 98.0.4758.102"/>
+         <property name="hostAddress" value="192.168.29.241"/>
+         <property name="sessionId" value="1d77d974d198450bd2838d9c4d2d1c39"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList=&quot;&quot;, isApplyToDesiredCapabilities=true }"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/Main Test Cases/TC03_Visual Testing Example" time="56.346" classname="Test Cases/Main Test Cases/TC03_Visual Testing Example" status="PASSED">
+         <system-out><![CDATA[2022-02-22 16:01:33 - [TEST_CASE][PASSED] - Test Cases/Main Test Cases/TC03_Visual Testing Example: Test Cases/Main Test Cases/TC03_Visual Testing Example
+
+2022-02-22 16:01:36 - [TEST_STEP][PASSED] - comment("Story: Book an appointment"): Story: Book an appointment
+
+2022-02-22 16:01:36 - [MESSAGE][INFO] - Story: Book an appointment
+
+2022-02-22 16:01:36 - [TEST_STEP][PASSED] - comment("Given that the user has logged into their account"): Given that the user has logged into their account
+
+2022-02-22 16:01:36 - [MESSAGE][INFO] - Given that the user has logged into their account
+
+2022-02-22 16:01:36 - [TEST_STEP][PASSED] - openBrowser(G_SiteURL): Browser is opened with url: 'http://demoaut.katalon.com'
+
+2022-02-22 16:01:38 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2022-02-22 16:01:38 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2022-02-22 16:01:50 - [MESSAGE][PASSED] - Browser is opened with url: 'http://demoaut.katalon.com'
+
+2022-02-22 16:01:50 - [TEST_STEP][PASSED] - takeScreenshotAsCheckpoint("login page"): Taking screenshot successfully
+
+2022-02-22 16:01:54 - [MESSAGE][INFO] - 0 hidden object(s)
+
+2022-02-22 16:01:55 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|keyes\keyes-login page.png]]
+
+2022-02-22 16:01:55 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Common Test Cases/Login"), ["Username":findTestData("TestData").getValue(1, 1), "Password":findTestData("TestData").getValue(2, 1)], STOP_ON_FAILURE): Call Test Case 'Test Cases/Common Test Cases/Login' successfully
+
+2022-02-22 16:01:57 - [TEST_CASE][PASSED] - Test Cases/Common Test Cases/Login: Test Cases/Common Test Cases/Login
+
+2022-02-22 16:01:58 - [TEST_STEP][PASSED] - click(findTestObject("Page_CuraHomepage/btn_MakeAppointment")): Object: 'Object Repository/Page_CuraHomepage/btn_MakeAppointment' is clicked on
+
+2022-02-22 16:02:00 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_CuraHomepage/btn_MakeAppointment' is clicked on
+
+2022-02-22 16:02:00 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Login/txt_UserName"), Username): Text 'John Doe' is set on object 'Object Repository/Page_Login/txt_UserName'
+
+2022-02-22 16:02:01 - [MESSAGE][PASSED] - Text 'John Doe' is set on object 'Object Repository/Page_Login/txt_UserName'
+
+2022-02-22 16:02:01 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Login/txt_Password"), Password): Text 'ThisIsNotAPassword' is set on object 'Object Repository/Page_Login/txt_Password'
+
+2022-02-22 16:02:02 - [MESSAGE][PASSED] - Text 'ThisIsNotAPassword' is set on object 'Object Repository/Page_Login/txt_Password'
+
+2022-02-22 16:02:02 - [TEST_STEP][PASSED] - click(findTestObject("Page_Login/btn_Login")): Object: 'Object Repository/Page_Login/btn_Login' is clicked on
+
+2022-02-22 16:02:03 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Login/btn_Login' is clicked on
+
+2022-02-22 16:02:03 - [TEST_STEP][PASSED] - landingPage = verifyElementPresent(findTestObject("Page_CuraAppointment/div_Appointment"), G_Timeout): Object 'Object Repository/Page_CuraAppointment/div_Appointment' is present
+
+2022-02-22 16:02:04 - [MESSAGE][PASSED] - Object 'Object Repository/Page_CuraAppointment/div_Appointment' is present
+
+2022-02-22 16:02:04 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Common Test Cases/Login' successfully
+
+2022-02-22 16:02:04 - [TEST_STEP][PASSED] - comment("And Appointment page is displayed"): And Appointment page is displayed
+
+2022-02-22 16:02:04 - [MESSAGE][INFO] - And Appointment page is displayed
+
+2022-02-22 16:02:04 - [TEST_STEP][PASSED] - if (true): Text 'Please make appointment as soon as possible.' is set on object 'Object Repository/Page_CuraAppointment/txt_Comment'
+
+2022-02-22 16:02:04 - [TEST_STEP][PASSED] - takeScreenshotAsCheckpoint("appointment page"): Taking screenshot successfully
+
+2022-02-22 16:02:06 - [MESSAGE][INFO] - 0 hidden object(s)
+
+2022-02-22 16:02:06 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|keyes\keyes-appointment page.png]]
+
+2022-02-22 16:02:06 - [TEST_STEP][PASSED] - selectOptionByLabel(findTestObject("Page_CuraAppointment/lst_Facility"), "Hongkong CURA Healthcare Center", false): All options with label 'Hongkong CURA Healthcare Center' are selected in object 'Object Repository/Page_CuraAppointment/lst_Facility' 
+
+2022-02-22 16:02:08 - [MESSAGE][PASSED] - All options with label 'Hongkong CURA Healthcare Center' are selected in object 'Object Repository/Page_CuraAppointment/lst_Facility' 
+
+2022-02-22 16:02:08 - [TEST_STEP][PASSED] - check(findTestObject("Page_CuraAppointment/chk_Medicaid")): Object 'Object Repository/Page_CuraAppointment/chk_Medicaid' is checked
+
+2022-02-22 16:02:09 - [MESSAGE][PASSED] - Object 'Object Repository/Page_CuraAppointment/chk_Medicaid' is checked
+
+2022-02-22 16:02:09 - [TEST_STEP][PASSED] - check(findTestObject("Page_CuraAppointment/chk_Readmission")): Object 'Object Repository/Page_CuraAppointment/chk_Readmission' is checked
+
+2022-02-22 16:02:10 - [MESSAGE][PASSED] - Object 'Object Repository/Page_CuraAppointment/chk_Readmission' is checked
+
+2022-02-22 16:02:10 - [TEST_STEP][PASSED] - setText(findTestObject("Page_CuraAppointment/txt_VisitDate"), "27/12/2016"): Text '27/12/2016' is set on object 'Object Repository/Page_CuraAppointment/txt_VisitDate'
+
+2022-02-22 16:02:12 - [MESSAGE][PASSED] - Text '27/12/2016' is set on object 'Object Repository/Page_CuraAppointment/txt_VisitDate'
+
+2022-02-22 16:02:12 - [TEST_STEP][PASSED] - setText(findTestObject("Page_CuraAppointment/txt_Comment"), "Please make appointment as soon as possible."): Text 'Please make appointment as soon as possible.' is set on object 'Object Repository/Page_CuraAppointment/txt_Comment'
+
+2022-02-22 16:02:14 - [MESSAGE][PASSED] - Text 'Please make appointment as soon as possible.' is set on object 'Object Repository/Page_CuraAppointment/txt_Comment'
+
+2022-02-22 16:02:14 - [TEST_STEP][PASSED] - comment("When he fills in valid information in Appointment page"): When he fills in valid information in Appointment page
+
+2022-02-22 16:02:14 - [MESSAGE][INFO] - When he fills in valid information in Appointment page
+
+2022-02-22 16:02:14 - [TEST_STEP][PASSED] - click(findTestObject("Page_CuraAppointment/btn_BookAppointment")): Object: 'Object Repository/Page_CuraAppointment/btn_BookAppointment' is clicked on
+
+2022-02-22 16:02:15 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_CuraAppointment/btn_BookAppointment' is clicked on
+
+2022-02-22 16:02:15 - [TEST_STEP][PASSED] - verifyTextPresent("Appointment Confirmation", false): Text 'Appointment Confirmation' is present on page 
+
+2022-02-22 16:02:16 - [MESSAGE][PASSED] - Text 'Appointment Confirmation' is present on page 
+
+2022-02-22 16:02:16 - [TEST_STEP][PASSED] - comment("Then he should be able to book a new appointment"): Then he should be able to book a new appointment
+
+2022-02-22 16:02:16 - [MESSAGE][INFO] - Then he should be able to book a new appointment
+
+2022-02-22 16:02:16 - [TEST_STEP][PASSED] - if (true): Actual text 'Please make appointment as soon as possible.' and expected text 'Please make appointment as soon as possible.' are matched 
+
+2022-02-22 16:02:16 - [TEST_STEP][PASSED] - takeFullPageScreenshotAsCheckpoint("booked appointment", [findTestObject("Page_AppointmentConfirmation/lbl_VisitDate")]): Taking screenshot successfully
+
+2022-02-22 16:02:16 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2022-02-22 16:02:16 - [MESSAGE][INFO] - 1 hidden object(s)
+
+2022-02-22 16:02:19 - [MESSAGE][INFO] - 0 hidden object(s)
+
+2022-02-22 16:02:19 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|keyes\keyes-booked appointment.png]]
+
+2022-02-22 16:02:19 - [TEST_STEP][PASSED] - verifyMatch("Hongkong CURA Healthcare Center", getText(findTestObject("Page_AppointmentConfirmation/lbl_Facility")), false): Actual text 'Hongkong CURA Healthcare Center' and expected text 'Hongkong CURA Healthcare Center' are matched 
+
+2022-02-22 16:02:20 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_AppointmentConfirmation/lbl_Facility' is: 'Hongkong CURA Healthcare Center'
+
+2022-02-22 16:02:20 - [MESSAGE][PASSED] - Actual text 'Hongkong CURA Healthcare Center' and expected text 'Hongkong CURA Healthcare Center' are matched 
+
+2022-02-22 16:02:20 - [TEST_STEP][PASSED] - verifyMatch("Yes", getText(findTestObject("Page_AppointmentConfirmation/lbl_HospitalReadmission")), false): Actual text 'Yes' and expected text 'Yes' are matched 
+
+2022-02-22 16:02:20 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_AppointmentConfirmation/lbl_HospitalReadmission' is: 'Yes'
+
+2022-02-22 16:02:20 - [MESSAGE][PASSED] - Actual text 'Yes' and expected text 'Yes' are matched 
+
+2022-02-22 16:02:20 - [TEST_STEP][PASSED] - verifyMatch("Medicaid", getText(findTestObject("Page_AppointmentConfirmation/lbl_Program")), false): Actual text 'Medicaid' and expected text 'Medicaid' are matched 
+
+2022-02-22 16:02:21 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_AppointmentConfirmation/lbl_Program' is: 'Medicaid'
+
+2022-02-22 16:02:21 - [MESSAGE][PASSED] - Actual text 'Medicaid' and expected text 'Medicaid' are matched 
+
+2022-02-22 16:02:21 - [TEST_STEP][PASSED] - verifyMatch("27/12/2016", getText(findTestObject("Page_AppointmentConfirmation/lbl_VisitDate")), false): Actual text '27/12/2016' and expected text '27/12/2016' are matched 
+
+2022-02-22 16:02:21 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_AppointmentConfirmation/lbl_VisitDate' is: '27/12/2016'
+
+2022-02-22 16:02:22 - [MESSAGE][PASSED] - Actual text '27/12/2016' and expected text '27/12/2016' are matched 
+
+2022-02-22 16:02:22 - [TEST_STEP][PASSED] - verifyMatch("Please make appointment as soon as possible.", getText(findTestObject("Page_AppointmentConfirmation/lbl_Comment")), false): Actual text 'Please make appointment as soon as possible.' and expected text 'Please make appointment as soon as possible.' are matched 
+
+2022-02-22 16:02:22 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_AppointmentConfirmation/lbl_Comment' is: 'Please make appointment as soon as possible.'
+
+2022-02-22 16:02:22 - [MESSAGE][PASSED] - Actual text 'Please make appointment as soon as possible.' and expected text 'Please make appointment as soon as possible.' are matched 
+
+2022-02-22 16:02:22 - [TEST_STEP][PASSED] - takeScreenshot(): Taking screenshot successfully
+
+2022-02-22 16:02:24 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|C:\\Users\\LENOVO\\git\\CrossCountry\\Reports\\20220222_160118\\Regression Test Suite\\20220222_160118\\1645525943745.png]]
+
+2022-02-22 16:02:24 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2022-02-22 16:02:30 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Main Test Cases/TC04_Verify Title Of Application" time="12.542" classname="Test Cases/Main Test Cases/TC04_Verify Title Of Application" status="PASSED">
+         <system-out><![CDATA[2022-02-22 16:02:30 - [TEST_CASE][PASSED] - Test Cases/Main Test Cases/TC04_Verify Title Of Application: Test Cases/Main Test Cases/TC04_Verify Title Of Application
+
+2022-02-22 16:02:32 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2022-02-22 16:02:32 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2022-02-22 16:02:32 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2022-02-22 16:02:35 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2022-02-22 16:02:35 - [TEST_STEP][PASSED] - navigateToUrl("https://katalon-demo-cura.herokuapp.com/"): Navigate to 'https://katalon-demo-cura.herokuapp.com/' successfully
+
+2022-02-22 16:02:40 - [MESSAGE][PASSED] - Navigate to 'https://katalon-demo-cura.herokuapp.com/' successfully
+
+2022-02-22 16:02:40 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Page_CURA Healthcare Service/h1_CURA Healthcare Service")): Object: 'Object Repository/Page_CURA Healthcare Service/h1_CURA Healthcare Service' is clicked on
+
+2022-02-22 16:02:41 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_CURA Healthcare Service/h1_CURA Healthcare Service' is clicked on
+
+2022-02-22 16:02:41 - [TEST_STEP][PASSED] - getText(findTestObject("Object Repository/Page_CURA Healthcare Service/h1_CURA Healthcare Service")): Text of object 'Object Repository/Page_CURA Healthcare Service/h1_CURA Healthcare Service' is: 'CURA Healthcare Service'
+
+2022-02-22 16:02:41 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_CURA Healthcare Service/h1_CURA Healthcare Service' is: 'CURA Healthcare Service'
+
+2022-02-22 16:02:41 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2022-02-22 16:02:42 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Main Test Cases/TC06_Verify Make Appoinment Button" time="16.869" classname="Test Cases/Main Test Cases/TC06_Verify Make Appoinment Button" status="PASSED">
+         <system-out><![CDATA[2022-02-22 16:02:42 - [TEST_CASE][PASSED] - Test Cases/Main Test Cases/TC06_Verify Make Appoinment Button: Test Cases/Main Test Cases/TC06_Verify Make Appoinment Button
+
+2022-02-22 16:02:44 - [TEST_STEP][PASSED] - comment("Launch URL"): Launch URL
+
+2022-02-22 16:02:44 - [MESSAGE][INFO] - Launch URL
+
+2022-02-22 16:02:44 - [TEST_STEP][PASSED] - comment("User Login With Valid Credentials"): User Login With Valid Credentials
+
+2022-02-22 16:02:44 - [MESSAGE][INFO] - User Login With Valid Credentials
+
+2022-02-22 16:02:44 - [TEST_STEP][PASSED] - openBrowser(G_SiteURL): Browser is opened with url: 'http://demoaut.katalon.com'
+
+2022-02-22 16:02:44 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2022-02-22 16:02:44 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2022-02-22 16:02:50 - [MESSAGE][PASSED] - Browser is opened with url: 'http://demoaut.katalon.com'
+
+2022-02-22 16:02:50 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2022-02-22 16:02:51 - [MESSAGE][PASSED] - Current window maximized
+
+2022-02-22 16:02:51 - [TEST_STEP][PASSED] - click(findTestObject("Page_CuraHomepage/btn_MakeAppointment")): Object: 'Object Repository/Page_CuraHomepage/btn_MakeAppointment' is clicked on
+
+2022-02-22 16:02:52 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_CuraHomepage/btn_MakeAppointment' is clicked on
+
+2022-02-22 16:02:52 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Login/txt_UserName"), findTestData("TestData").getValue(1, 1)): Text 'John Doe' is set on object 'Object Repository/Page_Login/txt_UserName'
+
+2022-02-22 16:02:54 - [MESSAGE][PASSED] - Text 'John Doe' is set on object 'Object Repository/Page_Login/txt_UserName'
+
+2022-02-22 16:02:54 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Login/txt_Password"), findTestData("TestData").getValue(2, 1)): Text 'ThisIsNotAPassword' is set on object 'Object Repository/Page_Login/txt_Password'
+
+2022-02-22 16:02:56 - [MESSAGE][PASSED] - Text 'ThisIsNotAPassword' is set on object 'Object Repository/Page_Login/txt_Password'
+
+2022-02-22 16:02:56 - [TEST_STEP][PASSED] - click(findTestObject("Page_Login/btn_Login")): Object: 'Object Repository/Page_Login/btn_Login' is clicked on
+
+2022-02-22 16:02:57 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Login/btn_Login' is clicked on
+
+2022-02-22 16:02:57 - [TEST_STEP][PASSED] - comment("User Login to Application"): User Login to Application
+
+2022-02-22 16:02:57 - [MESSAGE][INFO] - User Login to Application
+
+2022-02-22 16:02:57 - [TEST_STEP][PASSED] - verifyElementClickable(findTestObject("Page_AppointmentConfirmation/a_Make Appointment"), STOP_ON_FAILURE): Object 'Object Repository/Page_AppointmentConfirmation/a_Make Appointment' is clickable
+
+2022-02-22 16:02:58 - [MESSAGE][PASSED] - Object 'Object Repository/Page_AppointmentConfirmation/a_Make Appointment' is clickable
+
+2022-02-22 16:02:58 - [TEST_STEP][PASSED] - getUrl(): Current window's url is: 'https://katalon-demo-cura.herokuapp.com/#appointment'
+
+2022-02-22 16:02:58 - [MESSAGE][PASSED] - Current window's url is: 'https://katalon-demo-cura.herokuapp.com/#appointment'
+
+2022-02-22 16:02:58 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2022-02-22 16:02:59 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Main Test Cases/TC07_Reuse Login TestCase" time="24.18" classname="Test Cases/Main Test Cases/TC07_Reuse Login TestCase" status="PASSED">
+         <system-out><![CDATA[2022-02-22 16:02:59 - [TEST_CASE][PASSED] - Test Cases/Main Test Cases/TC07_Reuse Login TestCase: Test Cases/Main Test Cases/TC07_Reuse Login TestCase
+
+2022-02-22 16:03:01 - [TEST_STEP][PASSED] - comment("Launch URL"): Launch URL
+
+2022-02-22 16:03:01 - [MESSAGE][INFO] - Launch URL
+
+2022-02-22 16:03:01 - [TEST_STEP][PASSED] - openBrowser(G_SiteURL): Browser is opened with url: 'http://demoaut.katalon.com'
+
+2022-02-22 16:03:01 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2022-02-22 16:03:01 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2022-02-22 16:03:08 - [MESSAGE][PASSED] - Browser is opened with url: 'http://demoaut.katalon.com'
+
+2022-02-22 16:03:08 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2022-02-22 16:03:08 - [MESSAGE][PASSED] - Current window maximized
+
+2022-02-22 16:03:08 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Common Test Cases/Login"), ["Username":findTestData("TestData").getValue(1, 1), "Password":findTestData("TestData").getValue(2, 1)], STOP_ON_FAILURE): Call Test Case 'Test Cases/Common Test Cases/Login' successfully
+
+2022-02-22 16:03:08 - [TEST_CASE][PASSED] - Test Cases/Common Test Cases/Login: Test Cases/Common Test Cases/Login
+
+2022-02-22 16:03:08 - [TEST_STEP][PASSED] - click(findTestObject("Page_CuraHomepage/btn_MakeAppointment")): Object: 'Object Repository/Page_CuraHomepage/btn_MakeAppointment' is clicked on
+
+2022-02-22 16:03:09 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_CuraHomepage/btn_MakeAppointment' is clicked on
+
+2022-02-22 16:03:09 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Login/txt_UserName"), Username): Text 'John Doe' is set on object 'Object Repository/Page_Login/txt_UserName'
+
+2022-02-22 16:03:10 - [MESSAGE][PASSED] - Text 'John Doe' is set on object 'Object Repository/Page_Login/txt_UserName'
+
+2022-02-22 16:03:10 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Login/txt_Password"), Password): Text 'ThisIsNotAPassword' is set on object 'Object Repository/Page_Login/txt_Password'
+
+2022-02-22 16:03:12 - [MESSAGE][PASSED] - Text 'ThisIsNotAPassword' is set on object 'Object Repository/Page_Login/txt_Password'
+
+2022-02-22 16:03:12 - [TEST_STEP][PASSED] - click(findTestObject("Page_Login/btn_Login")): Object: 'Object Repository/Page_Login/btn_Login' is clicked on
+
+2022-02-22 16:03:13 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Login/btn_Login' is clicked on
+
+2022-02-22 16:03:13 - [TEST_STEP][PASSED] - landingPage = verifyElementPresent(findTestObject("Page_CuraAppointment/div_Appointment"), G_Timeout): Object 'Object Repository/Page_CuraAppointment/div_Appointment' is present
+
+2022-02-22 16:03:14 - [MESSAGE][PASSED] - Object 'Object Repository/Page_CuraAppointment/div_Appointment' is present
+
+2022-02-22 16:03:14 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Common Test Cases/Login' successfully
+
+2022-02-22 16:03:14 - [TEST_STEP][PASSED] - click(findTestObject("Page_AppointmentConfirmation/a_Make Appointment")): Object: 'Object Repository/Page_AppointmentConfirmation/a_Make Appointment' is clicked on
+
+2022-02-22 16:03:14 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_AppointmentConfirmation/a_Make Appointment' is clicked on
+
+2022-02-22 16:03:14 - [TEST_STEP][PASSED] - click(findTestObject("Page_AppointmentConfirmation/input_Apply for hospital readmission_hospital_readmission")): Object: 'Object Repository/Page_AppointmentConfirmation/input_Apply for hospital readmission_hospital_readmission' is clicked on
+
+2022-02-22 16:03:15 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_AppointmentConfirmation/input_Apply for hospital readmission_hospital_readmission' is clicked on
+
+2022-02-22 16:03:15 - [TEST_STEP][PASSED] - click(findTestObject("Page_AppointmentConfirmation/input_Medicare_programs")): Object: 'Object Repository/Page_AppointmentConfirmation/input_Medicare_programs' is clicked on
+
+2022-02-22 16:03:17 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_AppointmentConfirmation/input_Medicare_programs' is clicked on
+
+2022-02-22 16:03:17 - [TEST_STEP][PASSED] - click(findTestObject("Page_CuraAppointment/span_Visit Date (Required)_glyphicon glyphicon-calendar")): Object: 'Object Repository/Page_CuraAppointment/span_Visit Date (Required)_glyphicon glyphicon-calendar' is clicked on
+
+2022-02-22 16:03:18 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_CuraAppointment/span_Visit Date (Required)_glyphicon glyphicon-calendar' is clicked on
+
+2022-02-22 16:03:18 - [TEST_STEP][PASSED] - click(findTestObject("Page_CuraAppointment/td_24")): Object: 'Object Repository/Page_CuraAppointment/td_24' is clicked on
+
+2022-02-22 16:03:19 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_CuraAppointment/td_24' is clicked on
+
+2022-02-22 16:03:19 - [TEST_STEP][PASSED] - setText(findTestObject("Page_AppointmentConfirmation/textarea_Comment_comment"), "Make my appointment ASAP"): Text 'Make my appointment ASAP' is set on object 'Object Repository/Page_AppointmentConfirmation/textarea_Comment_comment'
+
+2022-02-22 16:03:20 - [MESSAGE][PASSED] - Text 'Make my appointment ASAP' is set on object 'Object Repository/Page_AppointmentConfirmation/textarea_Comment_comment'
+
+2022-02-22 16:03:20 - [TEST_STEP][PASSED] - click(findTestObject("Page_AppointmentConfirmation/button_Book Appointment")): Object: 'Object Repository/Page_AppointmentConfirmation/button_Book Appointment' is clicked on
+
+2022-02-22 16:03:21 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_AppointmentConfirmation/button_Book Appointment' is clicked on
+
+2022-02-22 16:03:21 - [TEST_STEP][PASSED] - verifyTextPresent("Appointment Confirmation", true): Text 'Appointment Confirmation' is present on page  using regular expression
+
+2022-02-22 16:03:22 - [MESSAGE][PASSED] - Text 'Appointment Confirmation' is present on page  using regular expression
+
+2022-02-22 16:03:22 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2022-02-22 16:03:23 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Main Test Cases/TC08_Verify Login with invalid Username" time="16.408" classname="Test Cases/Main Test Cases/TC08_Verify Login with invalid Username" status="PASSED">
+         <system-out><![CDATA[2022-02-22 16:03:23 - [TEST_CASE][PASSED] - Test Cases/Main Test Cases/TC08_Verify Login with invalid Username: Test Cases/Main Test Cases/TC08_Verify Login with invalid Username
+
+2022-02-22 16:03:25 - [TEST_STEP][PASSED] - comment("Story:Login To cura System using Invalid UserName"): Story:Login To cura System using Invalid UserName
+
+2022-02-22 16:03:25 - [MESSAGE][INFO] - Story:Login To cura System using Invalid UserName
+
+2022-02-22 16:03:25 - [TEST_STEP][PASSED] - comment("Given that the user has the invalid login information"): Given that the user has the invalid login information
+
+2022-02-22 16:03:25 - [MESSAGE][INFO] - Given that the user has the invalid login information
+
+2022-02-22 16:03:25 - [TEST_STEP][PASSED] - openBrowser(G_SiteURL): Browser is opened with url: 'http://demoaut.katalon.com'
+
+2022-02-22 16:03:25 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2022-02-22 16:03:25 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2022-02-22 16:03:32 - [MESSAGE][PASSED] - Browser is opened with url: 'http://demoaut.katalon.com'
+
+2022-02-22 16:03:32 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2022-02-22 16:03:32 - [MESSAGE][PASSED] - Current window maximized
+
+2022-02-22 16:03:32 - [TEST_STEP][PASSED] - click(findTestObject("Page_CURA Healthcare Service/a_Make Appointment")): Object: 'Object Repository/Page_CURA Healthcare Service/a_Make Appointment' is clicked on
+
+2022-02-22 16:03:33 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_CURA Healthcare Service/a_Make Appointment' is clicked on
+
+2022-02-22 16:03:33 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Login/txt_UserName"), findTestData("TestData").getValue(4, 1)): Text 'ThisIsNotPass' is set on object 'Object Repository/Page_Login/txt_UserName'
+
+2022-02-22 16:03:34 - [MESSAGE][PASSED] - Text 'ThisIsNotPass' is set on object 'Object Repository/Page_Login/txt_UserName'
+
+2022-02-22 16:03:34 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Login/txt_Password"), "ThisIsNotAPassword"): Text 'ThisIsNotAPassword' is set on object 'Object Repository/Page_Login/txt_Password'
+
+2022-02-22 16:03:36 - [MESSAGE][PASSED] - Text 'ThisIsNotAPassword' is set on object 'Object Repository/Page_Login/txt_Password'
+
+2022-02-22 16:03:36 - [TEST_STEP][PASSED] - click(findTestObject("Page_Login/btn_Login")): Object: 'Object Repository/Page_Login/btn_Login' is clicked on
+
+2022-02-22 16:03:37 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Login/btn_Login' is clicked on
+
+2022-02-22 16:03:37 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Page_CURA Healthcare Service/p_Login failed Please ensure the username and password are valid"), G_ShortTimeOut): Object 'Object Repository/Page_CURA Healthcare Service/p_Login failed Please ensure the username and password are valid' is present
+
+2022-02-22 16:03:37 - [MESSAGE][PASSED] - Object 'Object Repository/Page_CURA Healthcare Service/p_Login failed Please ensure the username and password are valid' is present
+
+2022-02-22 16:03:37 - [TEST_STEP][PASSED] - comment("Error Message displayed with Invalid User name"): Error Message displayed with Invalid User name
+
+2022-02-22 16:03:37 - [MESSAGE][INFO] - Error Message displayed with Invalid User name
+
+2022-02-22 16:03:37 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2022-02-22 16:03:40 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Main Test Cases/TC09_ Verify Login With Invalid Password" time="18.081" classname="Test Cases/Main Test Cases/TC09_ Verify Login With Invalid Password" status="PASSED">
+         <system-out><![CDATA[2022-02-22 16:03:40 - [TEST_CASE][PASSED] - Test Cases/Main Test Cases/TC09_ Verify Login With Invalid Password: Test Cases/Main Test Cases/TC09_ Verify Login With Invalid Password
+
+2022-02-22 16:03:41 - [TEST_STEP][PASSED] - comment("Story:Login To cura System using Valid UserName and Invalid Password"): Story:Login To cura System using Valid UserName and Invalid Password
+
+2022-02-22 16:03:41 - [MESSAGE][INFO] - Story:Login To cura System using Valid UserName and Invalid Password
+
+2022-02-22 16:03:41 - [TEST_STEP][PASSED] - openBrowser(G_SiteURL): Browser is opened with url: 'http://demoaut.katalon.com'
+
+2022-02-22 16:03:41 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2022-02-22 16:03:41 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2022-02-22 16:03:49 - [MESSAGE][PASSED] - Browser is opened with url: 'http://demoaut.katalon.com'
+
+2022-02-22 16:03:49 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2022-02-22 16:03:49 - [MESSAGE][PASSED] - Current window maximized
+
+2022-02-22 16:03:49 - [TEST_STEP][PASSED] - click(findTestObject("Page_CURA Healthcare Service/a_Make Appointment")): Object: 'Object Repository/Page_CURA Healthcare Service/a_Make Appointment' is clicked on
+
+2022-02-22 16:03:51 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_CURA Healthcare Service/a_Make Appointment' is clicked on
+
+2022-02-22 16:03:51 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Login/txt_UserName"), findTestData("TestData").getValue(2, 1)): Text 'ThisIsNotAPassword' is set on object 'Object Repository/Page_Login/txt_UserName'
+
+2022-02-22 16:03:53 - [MESSAGE][PASSED] - Text 'ThisIsNotAPassword' is set on object 'Object Repository/Page_Login/txt_UserName'
+
+2022-02-22 16:03:53 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Login/txt_Password"), findTestData("TestData").getValue(5, 1)): Text '5/3/22' is set on object 'Object Repository/Page_Login/txt_Password'
+
+2022-02-22 16:03:54 - [MESSAGE][PASSED] - Text '5/3/22' is set on object 'Object Repository/Page_Login/txt_Password'
+
+2022-02-22 16:03:54 - [TEST_STEP][PASSED] - click(findTestObject("Page_Login/btn_Login")): Object: 'Object Repository/Page_Login/btn_Login' is clicked on
+
+2022-02-22 16:03:56 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Login/btn_Login' is clicked on
+
+2022-02-22 16:03:56 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Page_CURA Healthcare Service/p_Login failed Please ensure the username and password are valid"), G_ShortTimeOut): Object 'Object Repository/Page_CURA Healthcare Service/p_Login failed Please ensure the username and password are valid' is present
+
+2022-02-22 16:03:57 - [MESSAGE][PASSED] - Object 'Object Repository/Page_CURA Healthcare Service/p_Login failed Please ensure the username and password are valid' is present
+
+2022-02-22 16:03:57 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2022-02-22 16:03:58 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Main Test Cases/TC10_Verify Cura HelthCare Service Title" time="17.007" classname="Test Cases/Main Test Cases/TC10_Verify Cura HelthCare Service Title" status="PASSED">
+         <system-out><![CDATA[2022-02-22 16:03:58 - [TEST_CASE][PASSED] - Test Cases/Main Test Cases/TC10_Verify Cura HelthCare Service Title: Test Cases/Main Test Cases/TC10_Verify Cura HelthCare Service Title
+
+2022-02-22 16:03:59 - [TEST_STEP][PASSED] - openBrowser(G_SiteURL): Browser is opened with url: 'http://demoaut.katalon.com'
+
+2022-02-22 16:03:59 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2022-02-22 16:03:59 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2022-02-22 16:04:08 - [MESSAGE][PASSED] - Browser is opened with url: 'http://demoaut.katalon.com'
+
+2022-02-22 16:04:08 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2022-02-22 16:04:08 - [MESSAGE][PASSED] - Current window maximized
+
+2022-02-22 16:04:08 - [TEST_STEP][PASSED] - click(findTestObject("Page_CURA Healthcare Service/a_Make Appointment")): Object: 'Object Repository/Page_CURA Healthcare Service/a_Make Appointment' is clicked on
+
+2022-02-22 16:04:09 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_CURA Healthcare Service/a_Make Appointment' is clicked on
+
+2022-02-22 16:04:09 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Login/txt_UserName"), findTestData("TestData").getValue(1, 1)): Text 'John Doe' is set on object 'Object Repository/Page_Login/txt_UserName'
+
+2022-02-22 16:04:10 - [MESSAGE][PASSED] - Text 'John Doe' is set on object 'Object Repository/Page_Login/txt_UserName'
+
+2022-02-22 16:04:10 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Login/txt_Password"), findTestData("TestData").getValue(2, 1)): Text 'ThisIsNotAPassword' is set on object 'Object Repository/Page_Login/txt_Password'
+
+2022-02-22 16:04:12 - [MESSAGE][PASSED] - Text 'ThisIsNotAPassword' is set on object 'Object Repository/Page_Login/txt_Password'
+
+2022-02-22 16:04:12 - [TEST_STEP][PASSED] - click(findTestObject("Page_Login/btn_Login")): Object: 'Object Repository/Page_Login/btn_Login' is clicked on
+
+2022-02-22 16:04:14 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Login/btn_Login' is clicked on
+
+2022-02-22 16:04:14 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Page_CURA Healthcare Service/h1_CURA Healthcare Service"), G_ShortTimeOut): Object 'Object Repository/Page_CURA Healthcare Service/h1_CURA Healthcare Service' is present
+
+2022-02-22 16:04:14 - [MESSAGE][PASSED] - Object 'Object Repository/Page_CURA Healthcare Service/h1_CURA Healthcare Service' is present
+
+2022-02-22 16:04:14 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2022-02-22 16:04:15 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Main Test Cases/TC11_Verify Social icons on Home Page" time="14.617" classname="Test Cases/Main Test Cases/TC11_Verify Social icons on Home Page" status="PASSED">
+         <system-out><![CDATA[2022-02-22 16:04:15 - [TEST_CASE][PASSED] - Test Cases/Main Test Cases/TC11_Verify Social icons on Home Page: Test Cases/Main Test Cases/TC11_Verify Social icons on Home Page
+
+2022-02-22 16:04:16 - [TEST_STEP][PASSED] - comment("Story: Display of Social icons on home page"): Story: Display of Social icons on home page
+
+2022-02-22 16:04:16 - [MESSAGE][INFO] - Story: Display of Social icons on home page
+
+2022-02-22 16:04:16 - [TEST_STEP][PASSED] - openBrowser(G_SiteURL): Browser is opened with url: 'http://demoaut.katalon.com'
+
+2022-02-22 16:04:16 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2022-02-22 16:04:16 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2022-02-22 16:04:23 - [MESSAGE][PASSED] - Browser is opened with url: 'http://demoaut.katalon.com'
+
+2022-02-22 16:04:23 - [TEST_STEP][PASSED] - click(findTestObject("Page_CURA Healthcare Service/a_Make Appointment")): Object: 'Object Repository/Page_CURA Healthcare Service/a_Make Appointment' is clicked on
+
+2022-02-22 16:04:24 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_CURA Healthcare Service/a_Make Appointment' is clicked on
+
+2022-02-22 16:04:24 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Login/txt_UserName"), findTestData("TestData").getValue(1, 1)): Text 'John Doe' is set on object 'Object Repository/Page_Login/txt_UserName'
+
+2022-02-22 16:04:25 - [MESSAGE][PASSED] - Text 'John Doe' is set on object 'Object Repository/Page_Login/txt_UserName'
+
+2022-02-22 16:04:25 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Login/txt_Password"), findTestData("TestData").getValue(2, 1)): Text 'ThisIsNotAPassword' is set on object 'Object Repository/Page_Login/txt_Password'
+
+2022-02-22 16:04:26 - [MESSAGE][PASSED] - Text 'ThisIsNotAPassword' is set on object 'Object Repository/Page_Login/txt_Password'
+
+2022-02-22 16:04:26 - [TEST_STEP][PASSED] - click(findTestObject("Page_Login/btn_Login")): Object: 'Object Repository/Page_Login/btn_Login' is clicked on
+
+2022-02-22 16:04:27 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Login/btn_Login' is clicked on
+
+2022-02-22 16:04:27 - [TEST_STEP][PASSED] - scrollToElement(findTestObject("Page_CURA Healthcare Service/i_infokatalon.com_fa fa-facebook fa-fw fa-3x"), G_ShortTimeOut): Scroll to object 'Object Repository/Page_CURA Healthcare Service/i_infokatalon.com_fa fa-facebook fa-fw fa-3x' successfully
+
+2022-02-22 16:04:28 - [MESSAGE][PASSED] - Scroll to object 'Object Repository/Page_CURA Healthcare Service/i_infokatalon.com_fa fa-facebook fa-fw fa-3x' successfully
+
+2022-02-22 16:04:28 - [TEST_STEP][PASSED] - comment("Scrolling to the Required Element"): Scrolling to the Required Element
+
+2022-02-22 16:04:28 - [MESSAGE][INFO] - Scrolling to the Required Element
+
+2022-02-22 16:04:28 - [TEST_STEP][PASSED] - enableSmartWait(): null
+
+2022-02-22 16:04:28 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2022-02-22 16:04:29 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Main Test Cases/TC12_Verify Facility Dropdown functionality" time="20.462" classname="Test Cases/Main Test Cases/TC12_Verify Facility Dropdown functionality" status="PASSED">
+         <system-out><![CDATA[2022-02-22 16:04:29 - [TEST_CASE][PASSED] - Test Cases/Main Test Cases/TC12_Verify Facility Dropdown functionality: Test Cases/Main Test Cases/TC12_Verify Facility Dropdown functionality
+
+2022-02-22 16:04:32 - [TEST_STEP][PASSED] - comment("Checking facility dropdown is functional"): Checking facility dropdown is functional
+
+2022-02-22 16:04:32 - [MESSAGE][INFO] - Checking facility dropdown is functional
+
+2022-02-22 16:04:32 - [TEST_STEP][PASSED] - openBrowser(G_SiteURL): Browser is opened with url: 'http://demoaut.katalon.com'
+
+2022-02-22 16:04:32 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2022-02-22 16:04:32 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2022-02-22 16:04:41 - [MESSAGE][PASSED] - Browser is opened with url: 'http://demoaut.katalon.com'
+
+2022-02-22 16:04:41 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2022-02-22 16:04:41 - [MESSAGE][PASSED] - Current window maximized
+
+2022-02-22 16:04:41 - [TEST_STEP][PASSED] - click(findTestObject("Page_CURA Healthcare Service/a_Make Appointment")): Object: 'Object Repository/Page_CURA Healthcare Service/a_Make Appointment' is clicked on
+
+2022-02-22 16:04:42 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_CURA Healthcare Service/a_Make Appointment' is clicked on
+
+2022-02-22 16:04:42 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Login/txt_UserName"), findTestData("TestData").getValue(1, 1)): Text 'John Doe' is set on object 'Object Repository/Page_Login/txt_UserName'
+
+2022-02-22 16:04:44 - [MESSAGE][PASSED] - Text 'John Doe' is set on object 'Object Repository/Page_Login/txt_UserName'
+
+2022-02-22 16:04:44 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Login/txt_Password"), findTestData("TestData").getValue(2, 1)): Text 'ThisIsNotAPassword' is set on object 'Object Repository/Page_Login/txt_Password'
+
+2022-02-22 16:04:46 - [MESSAGE][PASSED] - Text 'ThisIsNotAPassword' is set on object 'Object Repository/Page_Login/txt_Password'
+
+2022-02-22 16:04:46 - [TEST_STEP][PASSED] - click(findTestObject("Page_Login/btn_Login")): Object: 'Object Repository/Page_Login/btn_Login' is clicked on
+
+2022-02-22 16:04:48 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Login/btn_Login' is clicked on
+
+2022-02-22 16:04:48 - [TEST_STEP][PASSED] - click(findTestObject("Page_CURA Healthcare Service/select_Tokyo CURA Healthcare Center                            Hongkong CURA Healthcare Center                            Seoul CURA Healthcare Center")): Object: 'Object Repository/Page_CURA Healthcare Service/select_Tokyo CURA Healthcare Center                            Hongkong CURA Healthcare Center                            Seoul CURA Healthcare Center' is clicked on
+
+2022-02-22 16:04:48 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_CURA Healthcare Service/select_Tokyo CURA Healthcare Center                            Hongkong CURA Healthcare Center                            Seoul CURA Healthcare Center' is clicked on
+
+2022-02-22 16:04:48 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Page_CURA Healthcare Service/select_Tokyo CURA Healthcare Center                            Hongkong CURA Healthcare Center                            Seoul CURA Healthcare Center"), G_ShortTimeOut): Object 'Object Repository/Page_CURA Healthcare Service/select_Tokyo CURA Healthcare Center                            Hongkong CURA Healthcare Center                            Seoul CURA Healthcare Center' is present
+
+2022-02-22 16:04:48 - [MESSAGE][PASSED] - Object 'Object Repository/Page_CURA Healthcare Service/select_Tokyo CURA Healthcare Center                            Hongkong CURA Healthcare Center                            Seoul CURA Healthcare Center' is present
+
+2022-02-22 16:04:48 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2022-02-22 16:04:50 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Main Test Cases/TC13_Verify the Book Appointment is Functional" time="17.434" classname="Test Cases/Main Test Cases/TC13_Verify the Book Appointment is Functional" status="PASSED">
+         <system-out><![CDATA[2022-02-22 16:04:50 - [TEST_CASE][PASSED] - Test Cases/Main Test Cases/TC13_Verify the Book Appointment is Functional: Test Cases/Main Test Cases/TC13_Verify the Book Appointment is Functional
+
+2022-02-22 16:04:51 - [TEST_STEP][PASSED] - comment("Checking functionality of Book Appointment."): Checking functionality of Book Appointment.
+
+2022-02-22 16:04:51 - [MESSAGE][INFO] - Checking functionality of Book Appointment.
+
+2022-02-22 16:04:51 - [TEST_STEP][PASSED] - openBrowser(G_SiteURL): Browser is opened with url: 'http://demoaut.katalon.com'
+
+2022-02-22 16:04:51 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2022-02-22 16:04:51 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2022-02-22 16:04:58 - [MESSAGE][PASSED] - Browser is opened with url: 'http://demoaut.katalon.com'
+
+2022-02-22 16:04:58 - [TEST_STEP][PASSED] - click(findTestObject("Page_CURA Healthcare Service/a_Make Appointment")): Object: 'Object Repository/Page_CURA Healthcare Service/a_Make Appointment' is clicked on
+
+2022-02-22 16:04:59 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_CURA Healthcare Service/a_Make Appointment' is clicked on
+
+2022-02-22 16:04:59 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Login/txt_UserName"), findTestData("TestData").getValue(1, 1)): Text 'John Doe' is set on object 'Object Repository/Page_Login/txt_UserName'
+
+2022-02-22 16:05:00 - [MESSAGE][PASSED] - Text 'John Doe' is set on object 'Object Repository/Page_Login/txt_UserName'
+
+2022-02-22 16:05:00 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Login/txt_Password"), findTestData("TestData").getValue(2, 1)): Text 'ThisIsNotAPassword' is set on object 'Object Repository/Page_Login/txt_Password'
+
+2022-02-22 16:05:02 - [MESSAGE][PASSED] - Text 'ThisIsNotAPassword' is set on object 'Object Repository/Page_Login/txt_Password'
+
+2022-02-22 16:05:02 - [TEST_STEP][PASSED] - click(findTestObject("Page_Login/btn_Login")): Object: 'Object Repository/Page_Login/btn_Login' is clicked on
+
+2022-02-22 16:05:02 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Login/btn_Login' is clicked on
+
+2022-02-22 16:05:02 - [TEST_STEP][PASSED] - click(findTestObject("Page_AppointmentConfirmation/input_Visit Date (Required)_visit_date")): Object: 'Object Repository/Page_AppointmentConfirmation/input_Visit Date (Required)_visit_date' is clicked on
+
+2022-02-22 16:05:03 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_AppointmentConfirmation/input_Visit Date (Required)_visit_date' is clicked on
+
+2022-02-22 16:05:03 - [TEST_STEP][PASSED] - click(findTestObject("Page_AppointmentConfirmation/div_Visit Date (Required)_input-group-addon")): Object: 'Object Repository/Page_AppointmentConfirmation/div_Visit Date (Required)_input-group-addon' is clicked on
+
+2022-02-22 16:05:03 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_AppointmentConfirmation/div_Visit Date (Required)_input-group-addon' is clicked on
+
+2022-02-22 16:05:03 - [TEST_STEP][PASSED] - click(findTestObject("Page_CURA Healthcare Service/td_28")): Object: 'Object Repository/Page_CURA Healthcare Service/td_28' is clicked on
+
+2022-02-22 16:05:04 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_CURA Healthcare Service/td_28' is clicked on
+
+2022-02-22 16:05:04 - [TEST_STEP][PASSED] - setText(findTestObject("Page_AppointmentConfirmation/textarea_Comment_comment"), "This is comment while Booking an appointment"): Text 'This is comment while Booking an appointment' is set on object 'Object Repository/Page_AppointmentConfirmation/textarea_Comment_comment'
+
+2022-02-22 16:05:05 - [MESSAGE][PASSED] - Text 'This is comment while Booking an appointment' is set on object 'Object Repository/Page_AppointmentConfirmation/textarea_Comment_comment'
+
+2022-02-22 16:05:05 - [TEST_STEP][PASSED] - click(findTestObject("Page_CURA Healthcare Service/button_Book Appointment")): Object: 'Object Repository/Page_CURA Healthcare Service/button_Book Appointment' is clicked on
+
+2022-02-22 16:05:06 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_CURA Healthcare Service/button_Book Appointment' is clicked on
+
+2022-02-22 16:05:06 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Page_AppointmentConfirmation/h2_Appointment Confirmation"), G_ShortTimeOut): Object 'Object Repository/Page_AppointmentConfirmation/h2_Appointment Confirmation' is present
+
+2022-02-22 16:05:06 - [MESSAGE][PASSED] - Object 'Object Repository/Page_AppointmentConfirmation/h2_Appointment Confirmation' is present
+
+2022-02-22 16:05:06 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2022-02-22 16:05:07 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Main Test Cases/TC14_To Verify Radio Buttons is Display" time="69.084" classname="Test Cases/Main Test Cases/TC14_To Verify Radio Buttons is Display" status="PASSED">
+         <system-out><![CDATA[2022-02-22 16:05:07 - [TEST_CASE][PASSED] - Test Cases/Main Test Cases/TC14_To Verify Radio Buttons is Display: Test Cases/Main Test Cases/TC14_To Verify Radio Buttons is Display
+
+2022-02-22 16:05:09 - [TEST_STEP][PASSED] - comment("Launch URL"): Launch URL
+
+2022-02-22 16:05:09 - [MESSAGE][INFO] - Launch URL
+
+2022-02-22 16:05:09 - [TEST_STEP][PASSED] - openBrowser(G_SiteURL): Browser is opened with url: 'http://demoaut.katalon.com'
+
+2022-02-22 16:05:09 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2022-02-22 16:05:09 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2022-02-22 16:05:15 - [MESSAGE][PASSED] - Browser is opened with url: 'http://demoaut.katalon.com'
+
+2022-02-22 16:05:15 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2022-02-22 16:05:15 - [MESSAGE][PASSED] - Current window maximized
+
+2022-02-22 16:05:15 - [TEST_STEP][PASSED] - click(findTestObject("Page_CuraHomepage/btn_MakeAppointment")): Object: 'Object Repository/Page_CuraHomepage/btn_MakeAppointment' is clicked on
+
+2022-02-22 16:05:16 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_CuraHomepage/btn_MakeAppointment' is clicked on
+
+2022-02-22 16:05:16 - [TEST_STEP][PASSED] - comment("User Click on Make appoinment button"): User Click on Make appoinment button
+
+2022-02-22 16:05:16 - [MESSAGE][INFO] - User Click on Make appoinment button
+
+2022-02-22 16:05:16 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Login/txt_UserName"), findTestData("TestData").getValue(1, 1)): Text 'John Doe' is set on object 'Object Repository/Page_Login/txt_UserName'
+
+2022-02-22 16:05:17 - [MESSAGE][PASSED] - Text 'John Doe' is set on object 'Object Repository/Page_Login/txt_UserName'
+
+2022-02-22 16:05:17 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Login/txt_Password"), findTestData("TestData").getValue(2, 1)): Text 'ThisIsNotAPassword' is set on object 'Object Repository/Page_Login/txt_Password'
+
+2022-02-22 16:05:18 - [MESSAGE][PASSED] - Text 'ThisIsNotAPassword' is set on object 'Object Repository/Page_Login/txt_Password'
+
+2022-02-22 16:05:18 - [TEST_STEP][PASSED] - click(findTestObject("Page_Login/btn_Login")): Object: 'Object Repository/Page_Login/btn_Login' is clicked on
+
+2022-02-22 16:05:19 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Login/btn_Login' is clicked on
+
+2022-02-22 16:05:19 - [TEST_STEP][PASSED] - comment("User Login Sucessfully"): User Login Sucessfully
+
+2022-02-22 16:05:19 - [MESSAGE][INFO] - User Login Sucessfully
+
+2022-02-22 16:05:19 - [TEST_STEP][PASSED] - click(findTestObject("Page_AppointmentConfirmation/a_Make Appointment")): Object: 'Object Repository/Page_AppointmentConfirmation/a_Make Appointment' is clicked on
+
+2022-02-22 16:05:19 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_AppointmentConfirmation/a_Make Appointment' is clicked on
+
+2022-02-22 16:05:19 - [TEST_STEP][PASSED] - comment("User Navigate to Make appoinment page"): User Navigate to Make appoinment page
+
+2022-02-22 16:05:19 - [MESSAGE][INFO] - User Navigate to Make appoinment page
+
+2022-02-22 16:05:19 - [TEST_STEP][PASSED] - click(findTestObject("Page_CuraAppointment/select_")): Object: 'Object Repository/Page_CuraAppointment/select_' is clicked on
+
+2022-02-22 16:05:19 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_CuraAppointment/select_' is clicked on
+
+2022-02-22 16:05:19 - [TEST_STEP][PASSED] - selectOptionByLabel(findTestObject("Page_CuraAppointment/select_"), "Hongkong CURA Healthcare Center", true): All options with label 'Hongkong CURA Healthcare Center' are selected in object 'Object Repository/Page_CuraAppointment/select_'  using regular expression
+
+2022-02-22 16:05:21 - [MESSAGE][PASSED] - All options with label 'Hongkong CURA Healthcare Center' are selected in object 'Object Repository/Page_CuraAppointment/select_'  using regular expression
+
+2022-02-22 16:05:21 - [TEST_STEP][PASSED] - click(findTestObject("Page_CuraAppointment/select_")): Object: 'Object Repository/Page_CuraAppointment/select_' is clicked on
+
+2022-02-22 16:05:41 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_CuraAppointment/select_' is clicked on
+
+2022-02-22 16:05:41 - [TEST_STEP][PASSED] - click(findTestObject("Page_AppointmentConfirmation/input_")): Object: 'Object Repository/Page_AppointmentConfirmation/input_' is clicked on
+
+2022-02-22 16:06:13 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: '. Please recheck the objects properties to make sure the desired element is located. 
+
+2022-02-22 16:06:13 - [MESSAGE][WARNING] - [SELF-HEALING] Failed to find element with id 'Object Repository/Page_AppointmentConfirmation/input_'. Try using Self-healing.
+
+2022-02-22 16:06:13 - [MESSAGE][WARNING] - [SELF-HEALING] The current locator of test object 'Object Repository/Page_AppointmentConfirmation/input_' was broken. Propose an alternative one: '//input[@id='chk_hospotal_readmission']'.
+
+2022-02-22 16:06:13 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_AppointmentConfirmation/input_' is clicked on
+
+2022-02-22 16:06:13 - [TEST_STEP][PASSED] - getText(findTestObject("Page_AppointmentConfirmation/label_Healthcare Program")): Text of object 'Object Repository/Page_AppointmentConfirmation/label_Healthcare Program' is: 'Healthcare Program'
+
+2022-02-22 16:06:14 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_AppointmentConfirmation/label_Healthcare Program' is: 'Healthcare Program'
+
+2022-02-22 16:06:14 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("Page_AppointmentConfirmation/label_Healthcare Program"), "Healthcare Program"): Actual text and expected text of test object 'Object Repository/Page_AppointmentConfirmation/label_Healthcare Program' are matched.
+
+2022-02-22 16:06:14 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/Page_AppointmentConfirmation/label_Healthcare Program' are matched.
+
+2022-02-22 16:06:14 - [TEST_STEP][PASSED] - verifyElementClickable(findTestObject("Page_AppointmentConfirmation/input_Medicare_programs")): Object 'Object Repository/Page_AppointmentConfirmation/input_Medicare_programs' is clickable
+
+2022-02-22 16:06:14 - [MESSAGE][PASSED] - Object 'Object Repository/Page_AppointmentConfirmation/input_Medicare_programs' is clickable
+
+2022-02-22 16:06:14 - [TEST_STEP][PASSED] - verifyElementClickable(findTestObject("Page_AppointmentConfirmation/input_Medicare_programs")): Object 'Object Repository/Page_AppointmentConfirmation/input_Medicare_programs' is clickable
+
+2022-02-22 16:06:15 - [MESSAGE][PASSED] - Object 'Object Repository/Page_AppointmentConfirmation/input_Medicare_programs' is clickable
+
+2022-02-22 16:06:15 - [TEST_STEP][PASSED] - verifyElementClickable(findTestObject("Page_AppointmentConfirmation/input_None_programs")): Object 'Object Repository/Page_AppointmentConfirmation/input_None_programs' is clickable
+
+2022-02-22 16:06:15 - [MESSAGE][PASSED] - Object 'Object Repository/Page_AppointmentConfirmation/input_None_programs' is clickable
+
+2022-02-22 16:06:15 - [TEST_STEP][PASSED] - click(findTestObject("Page_AppointmentConfirmation/input_Medicare_programs")): Object: 'Object Repository/Page_AppointmentConfirmation/input_Medicare_programs' is clicked on
+
+2022-02-22 16:06:16 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_AppointmentConfirmation/input_Medicare_programs' is clicked on
+
+2022-02-22 16:06:16 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2022-02-22 16:06:16 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Main Test Cases/TC15_Verify the Functionality of History" time="12.912" classname="Test Cases/Main Test Cases/TC15_Verify the Functionality of History" status="PASSED">
+         <system-out><![CDATA[2022-02-22 16:06:16 - [TEST_CASE][PASSED] - Test Cases/Main Test Cases/TC15_Verify the Functionality of History: Test Cases/Main Test Cases/TC15_Verify the Functionality of History
+
+2022-02-22 16:06:17 - [TEST_STEP][PASSED] - comment("Verification of Functionality of History from Hamburger Menu"): Verification of Functionality of History from Hamburger Menu
+
+2022-02-22 16:06:17 - [MESSAGE][INFO] - Verification of Functionality of History from Hamburger Menu
+
+2022-02-22 16:06:17 - [TEST_STEP][PASSED] - openBrowser(G_SiteURL): Browser is opened with url: 'http://demoaut.katalon.com'
+
+2022-02-22 16:06:17 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2022-02-22 16:06:17 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2022-02-22 16:06:22 - [MESSAGE][PASSED] - Browser is opened with url: 'http://demoaut.katalon.com'
+
+2022-02-22 16:06:22 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2022-02-22 16:06:22 - [MESSAGE][PASSED] - Current window maximized
+
+2022-02-22 16:06:22 - [TEST_STEP][PASSED] - click(findTestObject("Page_CURA Healthcare Service/a_Make Appointment")): Object: 'Object Repository/Page_CURA Healthcare Service/a_Make Appointment' is clicked on
+
+2022-02-22 16:06:23 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_CURA Healthcare Service/a_Make Appointment' is clicked on
+
+2022-02-22 16:06:23 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Login/txt_UserName"), findTestData("TestData").getValue(1, 1)): Text 'John Doe' is set on object 'Object Repository/Page_Login/txt_UserName'
+
+2022-02-22 16:06:24 - [MESSAGE][PASSED] - Text 'John Doe' is set on object 'Object Repository/Page_Login/txt_UserName'
+
+2022-02-22 16:06:24 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Login/txt_Password"), findTestData("TestData").getValue(2, 1)): Text 'ThisIsNotAPassword' is set on object 'Object Repository/Page_Login/txt_Password'
+
+2022-02-22 16:06:25 - [MESSAGE][PASSED] - Text 'ThisIsNotAPassword' is set on object 'Object Repository/Page_Login/txt_Password'
+
+2022-02-22 16:06:25 - [TEST_STEP][PASSED] - click(findTestObject("Page_Login/btn_Login")): Object: 'Object Repository/Page_Login/btn_Login' is clicked on
+
+2022-02-22 16:06:27 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Login/btn_Login' is clicked on
+
+2022-02-22 16:06:27 - [TEST_STEP][PASSED] - click(findTestObject("Page_AppointmentConfirmation/a_CURA Healthcare_menu-toggle")): Object: 'Object Repository/Page_AppointmentConfirmation/a_CURA Healthcare_menu-toggle' is clicked on
+
+2022-02-22 16:06:27 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_AppointmentConfirmation/a_CURA Healthcare_menu-toggle' is clicked on
+
+2022-02-22 16:06:27 - [TEST_STEP][PASSED] - comment("Clicked on Hamburgur menu"): Clicked on Hamburgur menu
+
+2022-02-22 16:06:27 - [MESSAGE][INFO] - Clicked on Hamburgur menu
+
+2022-02-22 16:06:27 - [TEST_STEP][PASSED] - click(findTestObject("Page_CuraHomepage/a_History")): Object: 'Object Repository/Page_CuraHomepage/a_History' is clicked on
+
+2022-02-22 16:06:28 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_CuraHomepage/a_History' is clicked on
+
+2022-02-22 16:06:28 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Page_CURA Healthcare Service/h2_History"), G_ShortTimeOut): Object 'Object Repository/Page_CURA Healthcare Service/h2_History' is present
+
+2022-02-22 16:06:29 - [MESSAGE][PASSED] - Object 'Object Repository/Page_CURA Healthcare Service/h2_History' is present
+
+2022-02-22 16:06:29 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2022-02-22 16:06:29 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Main Test Cases/TC18_Select Value From Facility DropDown" time="13.386" classname="Test Cases/Main Test Cases/TC18_Select Value From Facility DropDown" status="PASSED">
+         <system-out><![CDATA[2022-02-22 16:06:29 - [TEST_CASE][PASSED] - Test Cases/Main Test Cases/TC18_Select Value From Facility DropDown: Test Cases/Main Test Cases/TC18_Select Value From Facility DropDown
+
+2022-02-22 16:06:30 - [TEST_STEP][PASSED] - comment("Launch URL"): Launch URL
+
+2022-02-22 16:06:30 - [MESSAGE][INFO] - Launch URL
+
+2022-02-22 16:06:30 - [TEST_STEP][PASSED] - openBrowser(G_SiteURL): Browser is opened with url: 'http://demoaut.katalon.com'
+
+2022-02-22 16:06:30 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2022-02-22 16:06:30 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2022-02-22 16:06:35 - [MESSAGE][PASSED] - Browser is opened with url: 'http://demoaut.katalon.com'
+
+2022-02-22 16:06:35 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2022-02-22 16:06:35 - [MESSAGE][PASSED] - Current window maximized
+
+2022-02-22 16:06:35 - [TEST_STEP][PASSED] - comment("User Click on Make Appoinment button"): User Click on Make Appoinment button
+
+2022-02-22 16:06:35 - [MESSAGE][INFO] - User Click on Make Appoinment button
+
+2022-02-22 16:06:35 - [TEST_STEP][PASSED] - click(findTestObject("Page_CuraHomepage/btn_MakeAppointment")): Object: 'Object Repository/Page_CuraHomepage/btn_MakeAppointment' is clicked on
+
+2022-02-22 16:06:36 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_CuraHomepage/btn_MakeAppointment' is clicked on
+
+2022-02-22 16:06:36 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Login/txt_UserName"), findTestData("TestData").getValue(1, 1)): Text 'John Doe' is set on object 'Object Repository/Page_Login/txt_UserName'
+
+2022-02-22 16:06:37 - [MESSAGE][PASSED] - Text 'John Doe' is set on object 'Object Repository/Page_Login/txt_UserName'
+
+2022-02-22 16:06:37 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Login/txt_Password"), findTestData("TestData").getValue(2, 1)): Text 'ThisIsNotAPassword' is set on object 'Object Repository/Page_Login/txt_Password'
+
+2022-02-22 16:06:38 - [MESSAGE][PASSED] - Text 'ThisIsNotAPassword' is set on object 'Object Repository/Page_Login/txt_Password'
+
+2022-02-22 16:06:38 - [TEST_STEP][PASSED] - click(findTestObject("Page_Login/btn_Login")): Object: 'Object Repository/Page_Login/btn_Login' is clicked on
+
+2022-02-22 16:06:39 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Login/btn_Login' is clicked on
+
+2022-02-22 16:06:39 - [TEST_STEP][PASSED] - comment("User Login Sucessfully"): User Login Sucessfully
+
+2022-02-22 16:06:39 - [MESSAGE][INFO] - User Login Sucessfully
+
+2022-02-22 16:06:39 - [TEST_STEP][PASSED] - click(findTestObject("Page_AppointmentConfirmation/a_Make Appointment")): Object: 'Object Repository/Page_AppointmentConfirmation/a_Make Appointment' is clicked on
+
+2022-02-22 16:06:40 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_AppointmentConfirmation/a_Make Appointment' is clicked on
+
+2022-02-22 16:06:40 - [TEST_STEP][PASSED] - comment("User navigate to appoinment Page"): User navigate to appoinment Page
+
+2022-02-22 16:06:40 - [MESSAGE][INFO] - User navigate to appoinment Page
+
+2022-02-22 16:06:40 - [TEST_STEP][PASSED] - click(findTestObject("Page_CuraAppointment/select_")): Object: 'Object Repository/Page_CuraAppointment/select_' is clicked on
+
+2022-02-22 16:06:40 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_CuraAppointment/select_' is clicked on
+
+2022-02-22 16:06:40 - [TEST_STEP][PASSED] - selectOptionByLabel(findTestObject("Page_CuraAppointment/select_"), "Hongkong CURA Healthcare Center", true): All options with label 'Hongkong CURA Healthcare Center' are selected in object 'Object Repository/Page_CuraAppointment/select_'  using regular expression
+
+2022-02-22 16:06:42 - [MESSAGE][PASSED] - All options with label 'Hongkong CURA Healthcare Center' are selected in object 'Object Repository/Page_CuraAppointment/select_'  using regular expression
+
+2022-02-22 16:06:42 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2022-02-22 16:06:43 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Main Test Cases/TC19_Verify the Home Functinality" time="11.651" classname="Test Cases/Main Test Cases/TC19_Verify the Home Functinality" status="PASSED">
+         <system-out><![CDATA[2022-02-22 16:06:43 - [TEST_CASE][PASSED] - Test Cases/Main Test Cases/TC19_Verify the Home Functinality: Test Cases/Main Test Cases/TC19_Verify the Home Functinality
+
+2022-02-22 16:06:43 - [TEST_STEP][PASSED] - comment(""): 
+
+2022-02-22 16:06:43 - [MESSAGE][INFO] - 
+
+2022-02-22 16:06:43 - [TEST_STEP][PASSED] - openBrowser(G_SiteURL): Browser is opened with url: 'http://demoaut.katalon.com'
+
+2022-02-22 16:06:43 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2022-02-22 16:06:43 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2022-02-22 16:06:48 - [MESSAGE][PASSED] - Browser is opened with url: 'http://demoaut.katalon.com'
+
+2022-02-22 16:06:48 - [TEST_STEP][PASSED] - click(findTestObject("Page_CURA Healthcare Service/a_Make Appointment")): Object: 'Object Repository/Page_CURA Healthcare Service/a_Make Appointment' is clicked on
+
+2022-02-22 16:06:49 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_CURA Healthcare Service/a_Make Appointment' is clicked on
+
+2022-02-22 16:06:49 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Login/txt_UserName"), findTestData("TestData").getValue(1, 1)): Text 'John Doe' is set on object 'Object Repository/Page_Login/txt_UserName'
+
+2022-02-22 16:06:50 - [MESSAGE][PASSED] - Text 'John Doe' is set on object 'Object Repository/Page_Login/txt_UserName'
+
+2022-02-22 16:06:50 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Login/txt_Password"), findTestData("TestData").getValue(2, 1)): Text 'ThisIsNotAPassword' is set on object 'Object Repository/Page_Login/txt_Password'
+
+2022-02-22 16:06:52 - [MESSAGE][PASSED] - Text 'ThisIsNotAPassword' is set on object 'Object Repository/Page_Login/txt_Password'
+
+2022-02-22 16:06:52 - [TEST_STEP][PASSED] - click(findTestObject("Page_Login/btn_Login")): Object: 'Object Repository/Page_Login/btn_Login' is clicked on
+
+2022-02-22 16:06:53 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Login/btn_Login' is clicked on
+
+2022-02-22 16:06:53 - [TEST_STEP][PASSED] - click(findTestObject("Page_AppointmentConfirmation/a_CURA Healthcare_menu-toggle")): Object: 'Object Repository/Page_AppointmentConfirmation/a_CURA Healthcare_menu-toggle' is clicked on
+
+2022-02-22 16:06:53 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_AppointmentConfirmation/a_CURA Healthcare_menu-toggle' is clicked on
+
+2022-02-22 16:06:53 - [TEST_STEP][PASSED] - click(findTestObject("Page_AppointmentConfirmation/a_Home")): Object: 'Object Repository/Page_AppointmentConfirmation/a_Home' is clicked on
+
+2022-02-22 16:06:54 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_AppointmentConfirmation/a_Home' is clicked on
+
+2022-02-22 16:06:54 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Page_CURA Healthcare Service/h1_CURA Healthcare Service"), G_ShortTimeOut): Object 'Object Repository/Page_CURA Healthcare Service/h1_CURA Healthcare Service' is present
+
+2022-02-22 16:06:54 - [MESSAGE][PASSED] - Object 'Object Repository/Page_CURA Healthcare Service/h1_CURA Healthcare Service' is present]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Main Test Cases/TC20_Verify User Should Not Able To Select Past Date" time="0.763" classname="Test Cases/Main Test Cases/TC20_Verify User Should Not Able To Select Past Date" status="ERROR">
+         <error type="ERROR" message="Test Cases/Main Test Cases/TC20_Verify User Should Not Able To Select Past Date FAILED.
+Reason:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+file:/C:/Users/LENOVO/git/CrossCountry/Scripts/Main%20Test%20Cases/TC20_Verify%20User%20Should%20Not%20Able%20To%20Select%20Past%20Date/Script1645427387222.groovy: 36: unable to resolve class SimpleDateFormat 
+ @ line 36, column 18.
+   SimpleDateFormat format = new SimpleDateFormat('yyyy-MM-dd')
+                    ^
+
+file:/C:/Users/LENOVO/git/CrossCountry/Scripts/Main%20Test%20Cases/TC20_Verify%20User%20Should%20Not%20Able%20To%20Select%20Past%20Date/Script1645427387222.groovy: 36: unable to resolve class SimpleDateFormat 
+ @ line 36, column 27.
+   SimpleDateFormat format = new SimpleDateFormat('yyyy-MM-dd')
+                             ^
+
+2 errors
+
+	at com.kms.katalon.core.main.ScriptEngine.getScript(ScriptEngine.java:199)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:442)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:433)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:412)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:404)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:281)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:363)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:363)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:363)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:202)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:164)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:105)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1645525878644.run(TempTestSuite1645525878644.groovy:36)
+"/>
+         <system-out><![CDATA[2022-02-22 16:06:58 - [TEST_CASE][ERROR] - Test Cases/Main Test Cases/TC20_Verify User Should Not Able To Select Past Date: Test Cases/Main Test Cases/TC20_Verify User Should Not Able To Select Past Date FAILED.
+Reason:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+file:/C:/Users/LENOVO/git/CrossCountry/Scripts/Main%20Test%20Cases/TC20_Verify%20User%20Should%20Not%20Able%20To%20Select%20Past%20Date/Script1645427387222.groovy: 36: unable to resolve class SimpleDateFormat 
+ @ line 36, column 18.
+   SimpleDateFormat format = new SimpleDateFormat('yyyy-MM-dd')
+                    ^
+
+file:/C:/Users/LENOVO/git/CrossCountry/Scripts/Main%20Test%20Cases/TC20_Verify%20User%20Should%20Not%20Able%20To%20Select%20Past%20Date/Script1645427387222.groovy: 36: unable to resolve class SimpleDateFormat 
+ @ line 36, column 27.
+   SimpleDateFormat format = new SimpleDateFormat('yyyy-MM-dd')
+                             ^
+
+2 errors
+
+	at com.kms.katalon.core.main.ScriptEngine.getScript(ScriptEngine.java:199)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:442)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:433)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:412)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:404)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:281)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:363)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:363)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:363)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:202)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:164)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:105)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1645525878644.run(TempTestSuite1645525878644.groovy:36)]]></system-out>
+         <system-err><![CDATA[2022-02-22 16:06:58 - [TEST_CASE][ERROR] - Test Cases/Main Test Cases/TC20_Verify User Should Not Able To Select Past Date: Test Cases/Main Test Cases/TC20_Verify User Should Not Able To Select Past Date FAILED.
+Reason:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+file:/C:/Users/LENOVO/git/CrossCountry/Scripts/Main%20Test%20Cases/TC20_Verify%20User%20Should%20Not%20Able%20To%20Select%20Past%20Date/Script1645427387222.groovy: 36: unable to resolve class SimpleDateFormat 
+ @ line 36, column 18.
+   SimpleDateFormat format = new SimpleDateFormat('yyyy-MM-dd')
+                    ^
+
+file:/C:/Users/LENOVO/git/CrossCountry/Scripts/Main%20Test%20Cases/TC20_Verify%20User%20Should%20Not%20Able%20To%20Select%20Past%20Date/Script1645427387222.groovy: 36: unable to resolve class SimpleDateFormat 
+ @ line 36, column 27.
+   SimpleDateFormat format = new SimpleDateFormat('yyyy-MM-dd')
+                             ^
+
+2 errors
+
+	at com.kms.katalon.core.main.ScriptEngine.getScript(ScriptEngine.java:199)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:442)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:433)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:412)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:404)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:281)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:363)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:363)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:363)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:202)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:164)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:105)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1645525878644.run(TempTestSuite1645525878644.groovy:36)]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Main Test Cases/TC21_Verify the Profile Functionality" time="13.784" classname="Test Cases/Main Test Cases/TC21_Verify the Profile Functionality" status="PASSED">
+         <system-out><![CDATA[2022-02-22 16:06:59 - [TEST_CASE][PASSED] - Test Cases/Main Test Cases/TC21_Verify the Profile Functionality: Test Cases/Main Test Cases/TC21_Verify the Profile Functionality
+
+2022-02-22 16:06:59 - [TEST_STEP][PASSED] - openBrowser(G_SiteURL): Browser is opened with url: 'http://demoaut.katalon.com'
+
+2022-02-22 16:06:59 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2022-02-22 16:07:00 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2022-02-22 16:07:00 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2022-02-22 16:07:05 - [MESSAGE][PASSED] - Browser is opened with url: 'http://demoaut.katalon.com'
+
+2022-02-22 16:07:05 - [TEST_STEP][PASSED] - click(findTestObject("Page_CURA Healthcare Service/a_Make Appointment")): Object: 'Object Repository/Page_CURA Healthcare Service/a_Make Appointment' is clicked on
+
+2022-02-22 16:07:06 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_CURA Healthcare Service/a_Make Appointment' is clicked on
+
+2022-02-22 16:07:06 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Login/txt_UserName"), findTestData("TestData").getValue(1, 1)): Text 'John Doe' is set on object 'Object Repository/Page_Login/txt_UserName'
+
+2022-02-22 16:07:07 - [MESSAGE][PASSED] - Text 'John Doe' is set on object 'Object Repository/Page_Login/txt_UserName'
+
+2022-02-22 16:07:07 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Login/txt_Password"), findTestData("TestData").getValue(2, 1)): Text 'ThisIsNotAPassword' is set on object 'Object Repository/Page_Login/txt_Password'
+
+2022-02-22 16:07:08 - [MESSAGE][PASSED] - Text 'ThisIsNotAPassword' is set on object 'Object Repository/Page_Login/txt_Password'
+
+2022-02-22 16:07:08 - [TEST_STEP][PASSED] - click(findTestObject("Page_Login/btn_Login")): Object: 'Object Repository/Page_Login/btn_Login' is clicked on
+
+2022-02-22 16:07:09 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Login/btn_Login' is clicked on
+
+2022-02-22 16:07:09 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Page_AppointmentConfirmation/a_CURA Healthcare_menu-toggle"), G_ShortTimeOut): Object 'Object Repository/Page_AppointmentConfirmation/a_CURA Healthcare_menu-toggle' is present
+
+2022-02-22 16:07:09 - [MESSAGE][PASSED] - Object 'Object Repository/Page_AppointmentConfirmation/a_CURA Healthcare_menu-toggle' is present
+
+2022-02-22 16:07:09 - [TEST_STEP][PASSED] - click(findTestObject("Page_AppointmentConfirmation/a_CURA Healthcare_menu-toggle")): Object: 'Object Repository/Page_AppointmentConfirmation/a_CURA Healthcare_menu-toggle' is clicked on
+
+2022-02-22 16:07:10 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_AppointmentConfirmation/a_CURA Healthcare_menu-toggle' is clicked on
+
+2022-02-22 16:07:10 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Page_CURA Healthcare Service/a_Profile"), G_ShortTimeOut): Object 'Object Repository/Page_CURA Healthcare Service/a_Profile' is present
+
+2022-02-22 16:07:10 - [MESSAGE][PASSED] - Object 'Object Repository/Page_CURA Healthcare Service/a_Profile' is present
+
+2022-02-22 16:07:10 - [TEST_STEP][PASSED] - click(findTestObject("Page_CURA Healthcare Service/a_Profile")): Object: 'Object Repository/Page_CURA Healthcare Service/a_Profile' is clicked on
+
+2022-02-22 16:07:11 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_CURA Healthcare Service/a_Profile' is clicked on
+
+2022-02-22 16:07:11 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Page_CURA Healthcare Service/h2_Profile"), G_ShortTimeOut): Object 'Object Repository/Page_CURA Healthcare Service/h2_Profile' is present
+
+2022-02-22 16:07:11 - [MESSAGE][PASSED] - Object 'Object Repository/Page_CURA Healthcare Service/h2_Profile' is present
+
+2022-02-22 16:07:11 - [TEST_STEP][PASSED] - comment("Profile Page get displayed after click on Profile option From Hamburger Menu"): Profile Page get displayed after click on Profile option From Hamburger Menu
+
+2022-02-22 16:07:11 - [MESSAGE][INFO] - Profile Page get displayed after click on Profile option From Hamburger Menu
+
+2022-02-22 16:07:11 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2022-02-22 16:07:12 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Main Test Cases/TC22_Verify the Go to HomePage Functionality" time="16.289" classname="Test Cases/Main Test Cases/TC22_Verify the Go to HomePage Functionality" status="PASSED">
+         <system-out><![CDATA[2022-02-22 16:07:13 - [TEST_CASE][PASSED] - Test Cases/Main Test Cases/TC22_Verify the Go to HomePage Functionality: Test Cases/Main Test Cases/TC22_Verify the Go to HomePage Functionality
+
+2022-02-22 16:07:13 - [TEST_STEP][PASSED] - comment("Verification of click on Go To Homepage Button on Appointment Page"): Verification of click on Go To Homepage Button on Appointment Page
+
+2022-02-22 16:07:13 - [MESSAGE][INFO] - Verification of click on Go To Homepage Button on Appointment Page
+
+2022-02-22 16:07:13 - [TEST_STEP][PASSED] - openBrowser(G_SiteURL): Browser is opened with url: 'http://demoaut.katalon.com'
+
+2022-02-22 16:07:13 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2022-02-22 16:07:13 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2022-02-22 16:07:19 - [MESSAGE][PASSED] - Browser is opened with url: 'http://demoaut.katalon.com'
+
+2022-02-22 16:07:19 - [TEST_STEP][PASSED] - comment("You are now Home Page of Cura HealthCare System"): You are now Home Page of Cura HealthCare System
+
+2022-02-22 16:07:19 - [MESSAGE][INFO] - You are now Home Page of Cura HealthCare System
+
+2022-02-22 16:07:19 - [TEST_STEP][PASSED] - click(findTestObject("Page_CURA Healthcare Service/a_Make Appointment")): Object: 'Object Repository/Page_CURA Healthcare Service/a_Make Appointment' is clicked on
+
+2022-02-22 16:07:20 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_CURA Healthcare Service/a_Make Appointment' is clicked on
+
+2022-02-22 16:07:20 - [TEST_STEP][PASSED] - comment("User is On Login Page Now"): User is On Login Page Now
+
+2022-02-22 16:07:20 - [MESSAGE][INFO] - User is On Login Page Now
+
+2022-02-22 16:07:20 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Login/txt_UserName"), findTestData("TestData").getValue(1, 1)): Text 'John Doe' is set on object 'Object Repository/Page_Login/txt_UserName'
+
+2022-02-22 16:07:21 - [MESSAGE][PASSED] - Text 'John Doe' is set on object 'Object Repository/Page_Login/txt_UserName'
+
+2022-02-22 16:07:21 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Login/txt_Password"), findTestData("TestData").getValue(2, 1)): Text 'ThisIsNotAPassword' is set on object 'Object Repository/Page_Login/txt_Password'
+
+2022-02-22 16:07:22 - [MESSAGE][PASSED] - Text 'ThisIsNotAPassword' is set on object 'Object Repository/Page_Login/txt_Password'
+
+2022-02-22 16:07:22 - [TEST_STEP][PASSED] - click(findTestObject("Page_Login/btn_Login")): Object: 'Object Repository/Page_Login/btn_Login' is clicked on
+
+2022-02-22 16:07:23 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Login/btn_Login' is clicked on
+
+2022-02-22 16:07:23 - [TEST_STEP][PASSED] - click(findTestObject("Page_AppointmentConfirmation/input_Visit Date (Required)_visit_date")): Object: 'Object Repository/Page_AppointmentConfirmation/input_Visit Date (Required)_visit_date' is clicked on
+
+2022-02-22 16:07:24 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_AppointmentConfirmation/input_Visit Date (Required)_visit_date' is clicked on
+
+2022-02-22 16:07:24 - [TEST_STEP][PASSED] - click(findTestObject("Page_AppointmentConfirmation/div_Visit Date (Required)_input-group-addon")): Object: 'Object Repository/Page_AppointmentConfirmation/div_Visit Date (Required)_input-group-addon' is clicked on
+
+2022-02-22 16:07:24 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_AppointmentConfirmation/div_Visit Date (Required)_input-group-addon' is clicked on
+
+2022-02-22 16:07:24 - [TEST_STEP][PASSED] - click(findTestObject("Page_AppointmentConfirmation/td_28")): Object: 'Object Repository/Page_AppointmentConfirmation/td_28' is clicked on
+
+2022-02-22 16:07:25 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_AppointmentConfirmation/td_28' is clicked on
+
+2022-02-22 16:07:25 - [TEST_STEP][PASSED] - click(findTestObject("Page_CURA Healthcare Service/button_Book Appointment")): Object: 'Object Repository/Page_CURA Healthcare Service/button_Book Appointment' is clicked on
+
+2022-02-22 16:07:26 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_CURA Healthcare Service/button_Book Appointment' is clicked on
+
+2022-02-22 16:07:26 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Page_AppointmentConfirmation/h2_Appointment Confirmation"), G_ShortTimeOut): Object 'Object Repository/Page_AppointmentConfirmation/h2_Appointment Confirmation' is present
+
+2022-02-22 16:07:26 - [MESSAGE][PASSED] - Object 'Object Repository/Page_AppointmentConfirmation/h2_Appointment Confirmation' is present
+
+2022-02-22 16:07:26 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Page_AppointmentConfirmation/a_Go to Homepage"), G_ShortTimeOut): Object 'Object Repository/Page_AppointmentConfirmation/a_Go to Homepage' is present
+
+2022-02-22 16:07:27 - [MESSAGE][PASSED] - Object 'Object Repository/Page_AppointmentConfirmation/a_Go to Homepage' is present
+
+2022-02-22 16:07:27 - [TEST_STEP][PASSED] - comment("Go To Hmepage option is displayed on page"): Go To Hmepage option is displayed on page
+
+2022-02-22 16:07:27 - [MESSAGE][INFO] - Go To Hmepage option is displayed on page
+
+2022-02-22 16:07:27 - [TEST_STEP][PASSED] - click(findTestObject("Page_AppointmentConfirmation/a_Go to Homepage")): Object: 'Object Repository/Page_AppointmentConfirmation/a_Go to Homepage' is clicked on
+
+2022-02-22 16:07:28 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_AppointmentConfirmation/a_Go to Homepage' is clicked on
+
+2022-02-22 16:07:28 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Page_AppointmentConfirmation/a_Make Appointment"), 0): Object 'Object Repository/Page_AppointmentConfirmation/a_Make Appointment' is present
+
+2022-02-22 16:07:28 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2022-02-22 16:07:28 - [MESSAGE][PASSED] - Object 'Object Repository/Page_AppointmentConfirmation/a_Make Appointment' is present
+
+2022-02-22 16:07:28 - [TEST_STEP][PASSED] - comment("User Navigated to the Home Page after click on Go to Homepage"): User Navigated to the Home Page after click on Go to Homepage
+
+2022-02-22 16:07:28 - [MESSAGE][INFO] - User Navigated to the Home Page after click on Go to Homepage
+
+2022-02-22 16:07:28 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2022-02-22 16:07:29 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Main Test Cases/TC23_Verify Functionalityof Apply For Redmission Checkbox" time="45.215" classname="Test Cases/Main Test Cases/TC23_Verify Functionalityof Apply For Redmission Checkbox" status="PASSED">
+         <system-out><![CDATA[2022-02-22 16:07:29 - [TEST_CASE][PASSED] - Test Cases/Main Test Cases/TC23_Verify Functionalityof Apply For Redmission Checkbox: Test Cases/Main Test Cases/TC23_Verify Functionalityof Apply For Redmission Checkbox
+
+2022-02-22 16:07:30 - [TEST_STEP][PASSED] - comment("Launch URL"): Launch URL
+
+2022-02-22 16:07:30 - [MESSAGE][INFO] - Launch URL
+
+2022-02-22 16:07:30 - [TEST_STEP][PASSED] - openBrowser(G_SiteURL): Browser is opened with url: 'http://demoaut.katalon.com'
+
+2022-02-22 16:07:30 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2022-02-22 16:07:30 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2022-02-22 16:07:34 - [MESSAGE][PASSED] - Browser is opened with url: 'http://demoaut.katalon.com'
+
+2022-02-22 16:07:34 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2022-02-22 16:07:34 - [MESSAGE][PASSED] - Current window maximized
+
+2022-02-22 16:07:34 - [TEST_STEP][PASSED] - click(findTestObject("Page_CuraHomepage/btn_MakeAppointment")): Object: 'Object Repository/Page_CuraHomepage/btn_MakeAppointment' is clicked on
+
+2022-02-22 16:07:35 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_CuraHomepage/btn_MakeAppointment' is clicked on
+
+2022-02-22 16:07:35 - [TEST_STEP][PASSED] - comment("User click on Make Appoinment"): User click on Make Appoinment
+
+2022-02-22 16:07:35 - [MESSAGE][INFO] - User click on Make Appoinment
+
+2022-02-22 16:07:35 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Login/txt_UserName"), findTestData("TestData").getValue(1, 1)): Text 'John Doe' is set on object 'Object Repository/Page_Login/txt_UserName'
+
+2022-02-22 16:07:36 - [MESSAGE][PASSED] - Text 'John Doe' is set on object 'Object Repository/Page_Login/txt_UserName'
+
+2022-02-22 16:07:36 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Login/txt_Password"), findTestData("TestData").getValue(2, 1)): Text 'ThisIsNotAPassword' is set on object 'Object Repository/Page_Login/txt_Password'
+
+2022-02-22 16:07:37 - [MESSAGE][PASSED] - Text 'ThisIsNotAPassword' is set on object 'Object Repository/Page_Login/txt_Password'
+
+2022-02-22 16:07:37 - [TEST_STEP][PASSED] - click(findTestObject("Page_Login/btn_Login")): Object: 'Object Repository/Page_Login/btn_Login' is clicked on
+
+2022-02-22 16:07:38 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Login/btn_Login' is clicked on
+
+2022-02-22 16:07:38 - [TEST_STEP][PASSED] - comment("User Login Sucessfully"): User Login Sucessfully
+
+2022-02-22 16:07:38 - [MESSAGE][INFO] - User Login Sucessfully
+
+2022-02-22 16:07:38 - [TEST_STEP][PASSED] - click(findTestObject("Page_AppointmentConfirmation/a_Make Appointment")): Object: 'Object Repository/Page_AppointmentConfirmation/a_Make Appointment' is clicked on
+
+2022-02-22 16:07:39 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_AppointmentConfirmation/a_Make Appointment' is clicked on
+
+2022-02-22 16:07:39 - [TEST_STEP][PASSED] - comment("User navigate to appoinment page"): User navigate to appoinment page
+
+2022-02-22 16:07:39 - [MESSAGE][INFO] - User navigate to appoinment page
+
+2022-02-22 16:07:39 - [TEST_STEP][PASSED] - click(findTestObject("Page_CuraAppointment/select_")): Object: 'Object Repository/Page_CuraAppointment/select_' is clicked on
+
+2022-02-22 16:07:39 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_CuraAppointment/select_' is clicked on
+
+2022-02-22 16:07:39 - [TEST_STEP][PASSED] - selectOptionByLabel(findTestObject("Page_CuraAppointment/select_"), "Hongkong CURA Healthcare Center", true): All options with label 'Hongkong CURA Healthcare Center' are selected in object 'Object Repository/Page_CuraAppointment/select_'  using regular expression
+
+2022-02-22 16:07:40 - [MESSAGE][PASSED] - All options with label 'Hongkong CURA Healthcare Center' are selected in object 'Object Repository/Page_CuraAppointment/select_'  using regular expression
+
+2022-02-22 16:07:40 - [TEST_STEP][PASSED] - click(findTestObject("Page_CuraAppointment/select_")): Object: 'Object Repository/Page_CuraAppointment/select_' is clicked on
+
+2022-02-22 16:07:41 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_CuraAppointment/select_' is clicked on
+
+2022-02-22 16:07:41 - [TEST_STEP][PASSED] - getText(findTestObject("Page_AppointmentConfirmation/label_Apply for hospital readmission")): Text of object 'Object Repository/Page_AppointmentConfirmation/label_Apply for hospital readmission' is: 'Apply for hospital readmission'
+
+2022-02-22 16:07:41 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_AppointmentConfirmation/label_Apply for hospital readmission' is: 'Apply for hospital readmission'
+
+2022-02-22 16:07:41 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Page_CuraAppointment/chk_Readmission"), G_ShortTimeOut): Object 'Object Repository/Page_CuraAppointment/chk_Readmission' is present
+
+2022-02-22 16:07:42 - [MESSAGE][PASSED] - Object 'Object Repository/Page_CuraAppointment/chk_Readmission' is present
+
+2022-02-22 16:07:42 - [TEST_STEP][PASSED] - verifyElementClickable(findTestObject("Page_AppointmentConfirmation/input_")): Object 'Object Repository/Page_AppointmentConfirmation/input_' is clickable
+
+2022-02-22 16:08:13 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: '. Please recheck the objects properties to make sure the desired element is located. 
+
+2022-02-22 16:08:13 - [MESSAGE][WARNING] - [SELF-HEALING] Failed to find element with id 'Object Repository/Page_AppointmentConfirmation/input_'. Try using Self-healing.
+
+2022-02-22 16:08:13 - [MESSAGE][WARNING] - [SELF-HEALING] The current locator of test object 'Object Repository/Page_AppointmentConfirmation/input_' was broken. Propose an alternative one: '//input[@id='chk_hospotal_readmission']'.
+
+2022-02-22 16:08:13 - [MESSAGE][PASSED] - Object 'Object Repository/Page_AppointmentConfirmation/input_' is clickable
+
+2022-02-22 16:08:13 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2022-02-22 16:08:14 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Main Test Cases/TC_001 For Profile Functionality" time="1.833" classname="Test Cases/Main Test Cases/TC_001 For Profile Functionality" status="PASSED">
+         <system-out><![CDATA[2022-02-22 16:08:14 - [TEST_CASE][PASSED] - Test Cases/Main Test Cases/TC_001 For Profile Functionality: Test Cases/Main Test Cases/TC_001 For Profile Functionality
+
+2022-02-22 16:08:14 - [TEST_STEP][PASSED] - openBrowser(URL): Browser is opened with url: 'null'
+
+2022-02-22 16:08:14 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2022-02-22 16:08:14 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2022-02-22 16:08:16 - [MESSAGE][PASSED] - Browser is opened with url: 'null']]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Main Test Cases/TC_002 Verification of checkpoints" time="0.067" classname="Test Cases/Main Test Cases/TC_002 Verification of checkpoints" status="FAILED">
+         <failure type="FAILED" message="Test Cases/Main Test Cases/TC_002 Verification of checkpoints FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Checkpoint data and Source data are NOT matched
+	at com.kms.katalon.core.keyword.builtin.VerifyCheckpointKeyword$_verifyCheckpoint_closure1.doCall(VerifyCheckpointKeyword.groovy:123)
+	at com.kms.katalon.core.keyword.builtin.VerifyCheckpointKeyword$_verifyCheckpoint_closure1.call(VerifyCheckpointKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:74)
+	at com.kms.katalon.core.keyword.builtin.VerifyCheckpointKeyword.verifyCheckpoint(VerifyCheckpointKeyword.groovy:125)
+	at com.kms.katalon.core.keyword.builtin.VerifyCheckpointKeyword.execute(VerifyCheckpointKeyword.groovy:51)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.verifyCheckpoint(BuiltinKeywords.groovy:404)
+	at TC_002 Verification of checkpoints.run(TC_002 Verification of checkpoints:20)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:442)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:433)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:412)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:404)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:281)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:363)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:363)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:363)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:202)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:164)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:105)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1645525878644.run(TempTestSuite1645525878644.groovy:36)
+"/>
+         <system-out><![CDATA[2022-02-22 16:08:17 - [TEST_CASE][FAILED] - Test Cases/Main Test Cases/TC_002 Verification of checkpoints: Test Cases/Main Test Cases/TC_002 Verification of checkpoints FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Checkpoint data and Source data are NOT matched
+	at com.kms.katalon.core.keyword.builtin.VerifyCheckpointKeyword$_verifyCheckpoint_closure1.doCall(VerifyCheckpointKeyword.groovy:123)
+	at com.kms.katalon.core.keyword.builtin.VerifyCheckpointKeyword$_verifyCheckpoint_closure1.call(VerifyCheckpointKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:74)
+	at com.kms.katalon.core.keyword.builtin.VerifyCheckpointKeyword.verifyCheckpoint(VerifyCheckpointKeyword.groovy:125)
+	at com.kms.katalon.core.keyword.builtin.VerifyCheckpointKeyword.execute(VerifyCheckpointKeyword.groovy:51)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.verifyCheckpoint(BuiltinKeywords.groovy:404)
+	at TC_002 Verification of checkpoints.run(TC_002 Verification of checkpoints:20)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:442)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:433)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:412)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:404)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:281)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:363)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:363)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:363)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:202)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:164)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:105)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1645525878644.run(TempTestSuite1645525878644.groovy:36)
+
+
+2022-02-22 16:08:17 - [TEST_STEP][FAILED] - verifyCheckpoint(findCheckpoint("Checkpoints/Checkpoint1"), false): Unable to verify Checkpoint 'Checkpoints/Checkpoint1' (Root cause: com.kms.katalon.core.exception.StepFailedException: Checkpoint data and Source data are NOT matched
+	at com.kms.katalon.core.keyword.builtin.VerifyCheckpointKeyword$_verifyCheckpoint_closure1.doCall(VerifyCheckpointKeyword.groovy:123)
+	at com.kms.katalon.core.keyword.builtin.VerifyCheckpointKeyword$_verifyCheckpoint_closure1.call(VerifyCheckpointKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:74)
+	at com.kms.katalon.core.keyword.builtin.VerifyCheckpointKeyword.verifyCheckpoint(VerifyCheckpointKeyword.groovy:125)
+	at com.kms.katalon.core.keyword.builtin.VerifyCheckpointKeyword.execute(VerifyCheckpointKeyword.groovy:51)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.verifyCheckpoint(BuiltinKeywords.groovy:404)
+	at TC_002 Verification of checkpoints.run(TC_002 Verification of checkpoints:20)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:442)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:433)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:412)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:404)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:281)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:363)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:363)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:363)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:202)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:164)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:105)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1645525878644.run(TempTestSuite1645525878644.groovy:36)
+)
+
+2022-02-22 16:08:17 - [MESSAGE][FAILED] - Unable to verify Checkpoint 'Checkpoints/Checkpoint1' (Root cause: com.kms.katalon.core.exception.StepFailedException: Checkpoint data and Source data are NOT matched
+	at com.kms.katalon.core.keyword.builtin.VerifyCheckpointKeyword$_verifyCheckpoint_closure1.doCall(VerifyCheckpointKeyword.groovy:123)
+	at com.kms.katalon.core.keyword.builtin.VerifyCheckpointKeyword$_verifyCheckpoint_closure1.call(VerifyCheckpointKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:74)
+	at com.kms.katalon.core.keyword.builtin.VerifyCheckpointKeyword.verifyCheckpoint(VerifyCheckpointKeyword.groovy:125)
+	at com.kms.katalon.core.keyword.builtin.VerifyCheckpointKeyword.execute(VerifyCheckpointKeyword.groovy:51)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.verifyCheckpoint(BuiltinKeywords.groovy:404)
+	at TC_002 Verification of checkpoints.run(TC_002 Verification of checkpoints:20)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:442)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:433)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:412)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:404)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:281)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:363)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:363)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:363)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:202)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:164)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:105)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1645525878644.run(TempTestSuite1645525878644.groovy:36)
+)]]></system-out>
+         <system-err><![CDATA[2022-02-22 16:08:17 - [TEST_CASE][FAILED] - Test Cases/Main Test Cases/TC_002 Verification of checkpoints: Test Cases/Main Test Cases/TC_002 Verification of checkpoints FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Checkpoint data and Source data are NOT matched
+	at com.kms.katalon.core.keyword.builtin.VerifyCheckpointKeyword$_verifyCheckpoint_closure1.doCall(VerifyCheckpointKeyword.groovy:123)
+	at com.kms.katalon.core.keyword.builtin.VerifyCheckpointKeyword$_verifyCheckpoint_closure1.call(VerifyCheckpointKeyword.groovy)
+	at com.kms.katalon.core.keyword.internal.KeywordMain.runKeyword(KeywordMain.groovy:74)
+	at com.kms.katalon.core.keyword.builtin.VerifyCheckpointKeyword.verifyCheckpoint(VerifyCheckpointKeyword.groovy:125)
+	at com.kms.katalon.core.keyword.builtin.VerifyCheckpointKeyword.execute(VerifyCheckpointKeyword.groovy:51)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.keyword.BuiltinKeywords.verifyCheckpoint(BuiltinKeywords.groovy:404)
+	at TC_002 Verification of checkpoints.run(TC_002 Verification of checkpoints:20)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:442)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:433)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:412)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:404)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:281)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:363)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:363)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:363)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:202)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:164)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:105)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1645525878644.run(TempTestSuite1645525878644.groovy:36)]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2022-02-22 16:01:32 - [TEST_SUITE][ERROR] - Regression Test Suite: Test Cases/Main Test Cases/TC20_Verify User Should Not Able To Select Past Date FAILED.
+Reason:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+file:/C:/Users/LENOVO/git/CrossCountry/Scripts/Main%20Test%20Cases/TC20_Verify%20User%20Should%20Not%20Able%20To%20Select%20Past%20Date/Script1645427387222.groovy: 36: unable to resolve class SimpleDateFormat 
+ @ line 36, column 18.
+   SimpleDateFormat format = new SimpleDateFormat('yyyy-MM-dd')
+                    ^
+
+file:/C:/Users/LENOVO/git/CrossCountry/Scripts/Main%20Test%20Cases/TC20_Verify%20User%20Should%20Not%20Able%20To%20Select%20Past%20Date/Script1645427387222.groovy: 36: unable to resolve class SimpleDateFormat 
+ @ line 36, column 27.
+   SimpleDateFormat format = new SimpleDateFormat('yyyy-MM-dd')
+                             ^
+
+2 errors
+
+	at com.kms.katalon.core.main.ScriptEngine.getScript(ScriptEngine.java:199)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:442)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:433)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:412)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:404)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:281)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:202)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:164)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:105)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1645525878644.run(TempTestSuite1645525878644.groovy:36)]]></system-out>
+      <system-err><![CDATA[2022-02-22 16:01:32 - [TEST_SUITE][ERROR] - Regression Test Suite: Test Cases/Main Test Cases/TC20_Verify User Should Not Able To Select Past Date FAILED.
+Reason:
+org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+file:/C:/Users/LENOVO/git/CrossCountry/Scripts/Main%20Test%20Cases/TC20_Verify%20User%20Should%20Not%20Able%20To%20Select%20Past%20Date/Script1645427387222.groovy: 36: unable to resolve class SimpleDateFormat 
+ @ line 36, column 18.
+   SimpleDateFormat format = new SimpleDateFormat('yyyy-MM-dd')
+                    ^
+
+file:/C:/Users/LENOVO/git/CrossCountry/Scripts/Main%20Test%20Cases/TC20_Verify%20User%20Should%20Not%20Able%20To%20Select%20Past%20Date/Script1645427387222.groovy: 36: unable to resolve class SimpleDateFormat 
+ @ line 36, column 27.
+   SimpleDateFormat format = new SimpleDateFormat('yyyy-MM-dd')
+                             ^
+
+2 errors
+
+	at com.kms.katalon.core.main.ScriptEngine.getScript(ScriptEngine.java:199)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:442)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:433)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:412)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:404)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:281)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:202)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:164)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:105)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1645525878644.run(TempTestSuite1645525878644.groovy:36)]]></system-err>
+   </testsuite>
+</testsuites>

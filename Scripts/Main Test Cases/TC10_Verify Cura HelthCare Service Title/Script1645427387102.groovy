@@ -17,15 +17,15 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser(findTestData('TestData').getValue(1, 1))
+WebUI.openBrowser(GlobalVariable.G_SiteURL)
 
 WebUI.maximizeWindow()
 
 WebUI.click(findTestObject('Page_CURA Healthcare Service/a_Make Appointment'))
 
-WebUI.setText(findTestObject('Page_Login/txt_UserName'), findTestData('TestData').getValue(2, 1))
+WebUI.setText(findTestObject('Page_Login/txt_UserName'), findTestData('TestData').getValue(1, 1))
 
-WebUI.setText(findTestObject('Page_Login/txt_Password'), findTestData('TestData').getValue(3, 1))
+WebUI.setText(findTestObject('Page_Login/txt_Password'), findTestData('TestData').getValue(2, 1))
 
 WebUI.click(findTestObject('Page_Login/btn_Login'))
 

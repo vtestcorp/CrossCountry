@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description></description>
-   <name>healthcare-tests - TS_RegressionTest</name>
+   <name>Parallel Execution</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient>swapnalipayghan@gmail.com;</mailRecipient>
