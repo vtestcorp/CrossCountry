@@ -17,5 +17,5 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.verifyCheckpoint(findCheckpoint('Checkpoints/Checkpoint1'), false)
+WebUI.verifyCheckpoint(findCheckpoint('Checkpoints/CheckpointData'), false)
 

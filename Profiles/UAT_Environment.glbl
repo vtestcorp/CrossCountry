@@ -7,7 +7,7 @@
    <GlobalVariableEntity>
       <description></description>
       <initValue>'https://www.vtestcorp.com'</initValue>
-      <name>URL</name>
+      <name>G_SiteURL</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
