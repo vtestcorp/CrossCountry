@@ -24,7 +24,7 @@ import com.kms.katalon.core.annotation.AfterTestSuite
 import com.kms.katalon.core.context.TestCaseContext
 import com.kms.katalon.core.context.TestSuiteContext
 
-class Listener1 {
+class Listener {
 	/**
 	 * Executes before every test case starts.
 	 * @param testCaseContext related information of the executed test case.

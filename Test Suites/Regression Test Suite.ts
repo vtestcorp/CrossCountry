@@ -120,15 +120,9 @@
       <testCaseId>Test Cases/Main Test Cases/TC23_Verify Functionalityof Apply For Redmission Checkbox</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>e38c6049-8e21-4291-b2ae-90d7b0e6d45c</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Main Test Cases/TC_001 For Profile Functionality</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
       <guid>1e9306d9-7bc0-4e30-a87b-b977de8f73d6</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Main Test Cases/TC_002 Verification of checkpoints</testCaseId>
+      <testCaseId>Test Cases/Main Test Cases/TC24_Verification of checkpoints</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>
