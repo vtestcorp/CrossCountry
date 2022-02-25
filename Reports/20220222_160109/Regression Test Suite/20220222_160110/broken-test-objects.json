@@ -1,0 +1,14 @@
+{
+  "brokenTestObjects": [
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/Page_AppointmentConfirmation/input_",
+      "brokenLocator": "",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "//input[@id\u003d\u0027chk_hospotal_readmission\u0027]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/20220222_160109/Regression Test Suite/20220222_160110/Object Repository/Page_AppointmentConfirmation/input__attributes.png"
+    }
+  ]
+}

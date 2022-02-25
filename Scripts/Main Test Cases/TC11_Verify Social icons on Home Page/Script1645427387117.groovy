@@ -19,13 +19,13 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.comment('Story: Display of Social icons on home page')
 
-WebUI.openBrowser(findTestData('TestData').getValue(1, 1))
+WebUI.openBrowser(GlobalVariable.G_SiteURL)
 
 WebUI.click(findTestObject('Page_CURA Healthcare Service/a_Make Appointment'))
 
-WebUI.setText(findTestObject('Page_Login/txt_UserName'), findTestData('TestData').getValue(2, 1))
+WebUI.setText(findTestObject('Page_Login/txt_UserName'), findTestData('TestData').getValue(1, 1))
 
-WebUI.setText(findTestObject('Page_Login/txt_Password'), findTestData('TestData').getValue(3, 1))
+WebUI.setText(findTestObject('Page_Login/txt_Password'), findTestData('TestData').getValue(2, 1))
 
 WebUI.click(findTestObject('Page_Login/btn_Login'))
 

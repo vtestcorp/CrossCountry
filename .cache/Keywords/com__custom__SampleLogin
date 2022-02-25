@@ -1,0 +1,16 @@
+{
+  "keywordFileContentHash": "AB48F76B6A4871EB88ABD20E72E144B0",
+  "keywordClasses": [
+    {
+      "name": "com.custom.SampleLogin",
+      "keywordMethods": [
+        {
+          "name": "loginKeyword",
+          "parameters": [],
+          "javadoc": ""
+        }
+      ]
+    }
+  ],
+  "javadocParsed": true
+}

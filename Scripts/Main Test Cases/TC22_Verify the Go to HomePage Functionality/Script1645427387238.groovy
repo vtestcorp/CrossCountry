@@ -27,9 +27,9 @@ WebUI.click(findTestObject('Page_CURA Healthcare Service/a_Make Appointment'))
 
 WebUI.comment('User is On Login Page Now')
 
-WebUI.setText(findTestObject('Page_Login/txt_UserName'), findTestData('TestData').getValue(2, 1))
+WebUI.setText(findTestObject('Page_Login/txt_UserName'), findTestData('TestData').getValue(1, 1))
 
-WebUI.setText(findTestObject('Page_Login/txt_Password'), findTestData('TestData').getValue(3, 1))
+WebUI.setText(findTestObject('Page_Login/txt_Password'), findTestData('TestData').getValue(2, 1))
 
 WebUI.click(findTestObject('Page_Login/btn_Login'))
 

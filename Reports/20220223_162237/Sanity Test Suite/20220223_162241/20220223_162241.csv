@@ -1,0 +1,86 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Sanity Test Suite,Firefox 97.0,,,2022-02-23 16:22:48,2022-02-23 16:25:08,2m - 19.329s,FAILED
+,,,,,,,
+Test Cases/Main Test Cases/TC01_Verify Successful Login,Firefox 97.0,"Verify if users can login successful. 
+
+Steps:
+- Click on 'Book Appointment' button to login
+- Input username and password
+- Click on 'Login' button
+
+Expected result:
+'Appointment' section is displayed after successful login",,2022-02-23 16:22:49,2022-02-23 16:23:08,19.560s,PASSED
+"comment(""Story: Login to CURA system"")",Firefox 97.0,,,2022-02-23 16:22:50,2022-02-23 16:22:51,0.809s,PASSED
+"comment(""Given that the user has the valid login information"")",Firefox 97.0,,,2022-02-23 16:22:51,2022-02-23 16:22:51,0.016s,PASSED
+openBrowser(G_SiteURL),Firefox 97.0,,,2022-02-23 16:22:51,2022-02-23 16:23:02,11.639s,PASSED
+"click(findTestObject(""Page_CuraHomepage/btn_MakeAppointment""))",Firefox 97.0,,,2022-02-23 16:23:02,2022-02-23 16:23:03,0.978s,PASSED
+"setText(findTestObject(""Page_Login/txt_UserName""), findTestData(""TestData"").getValue(1, 1))",Firefox 97.0,,,2022-02-23 16:23:03,2022-02-23 16:23:05,1.767s,PASSED
+"setText(findTestObject(""Page_Login/txt_Password""), findTestData(""TestData"").getValue(2, 1))",Firefox 97.0,,,2022-02-23 16:23:05,2022-02-23 16:23:06,0.840s,PASSED
+"comment(""When he logins to CURA system"")",Firefox 97.0,,,2022-02-23 16:23:06,2022-02-23 16:23:06,0.003s,PASSED
+"click(findTestObject(""Page_Login/btn_Login""))",Firefox 97.0,,,2022-02-23 16:23:06,2022-02-23 16:23:07,1.032s,PASSED
+"comment(""Then he should be able to login successfully"")",Firefox 97.0,,,2022-02-23 16:23:07,2022-02-23 16:23:07,0.002s,PASSED
+"landingPage = verifyElementPresent(findTestObject(""Page_CuraAppointment/div_Appointment""), G_Timeout)",Firefox 97.0,,,2022-02-23 16:23:07,2022-02-23 16:23:07,0.514s,PASSED
+closeBrowser(),Firefox 97.0,,,2022-02-23 16:23:07,2022-02-23 16:23:08,1.158s,PASSED
+,,,,,,,
+Test Cases/Main Test Cases/TC02_Verify Successful Appointment,Firefox 97.0,"Verify if users can book an appointment sucessfully.
+Pre-condition: Users have already logged in
+
+Steps:
+- Fill in appoinment's information
+- Click on appointment's button
+
+Expected results:
+Appointment Confirmation page is displayed",,2022-02-23 16:23:08,2022-02-23 16:23:35,26.877s,PASSED
+"comment(""Story: Book an appointment"")",Firefox 97.0,,,2022-02-23 16:23:10,2022-02-23 16:23:10,0.006s,PASSED
+"comment(""Given that the user has logged into their account"")",Firefox 97.0,,,2022-02-23 16:23:10,2022-02-23 16:23:10,0.007s,PASSED
+openBrowser(G_SiteURL),Firefox 97.0,,,2022-02-23 16:23:10,2022-02-23 16:23:18,8.740s,PASSED
+"callTestCase(findTestCase(""Common Test Cases/Login""), [""Username"":""John Doe"", ""Password"":""ThisIsNotAPassword""], STOP_ON_FAILURE)",Firefox 97.0,,,2022-02-23 16:23:18,2022-02-23 16:23:24,5.397s,PASSED
+"comment(""And Appointment page is displayed"")",Firefox 97.0,,,2022-02-23 16:23:24,2022-02-23 16:23:24,0.006s,PASSED
+if (true),Firefox 97.0,,,2022-02-23 16:23:24,2022-02-23 16:23:29,5.596s,PASSED
+"comment(""When he fills in valid information in Appointment page"")",Firefox 97.0,,,2022-02-23 16:23:29,2022-02-23 16:23:29,0.003s,PASSED
+"click(findTestObject(""Page_CuraAppointment/btn_BookAppointment""))",Firefox 97.0,,,2022-02-23 16:23:29,2022-02-23 16:23:30,0.956s,PASSED
+"verifyTextPresent(""Appointment Confirmation"", false)",Firefox 97.0,,,2022-02-23 16:23:30,2022-02-23 16:23:31,0.592s,PASSED
+"comment(""Then he should be able to book a new appointment"")",Firefox 97.0,,,2022-02-23 16:23:31,2022-02-23 16:23:31,0.004s,PASSED
+if (true),Firefox 97.0,,,2022-02-23 16:23:31,2022-02-23 16:23:34,2.657s,PASSED
+takeScreenshot(),Firefox 97.0,,,2022-02-23 16:23:34,2022-02-23 16:23:34,0.438s,PASSED
+closeBrowser(),Firefox 97.0,,,2022-02-23 16:23:34,2022-02-23 16:23:35,1.420s,PASSED
+,,,,,,,
+Test Cases/Main Test Cases/TC05_Verify Functionality Of Facility DropDown,Firefox 97.0,,,2022-02-23 16:23:35,2022-02-23 16:23:54,18.655s,PASSED
+"comment(""Launch URL"")",Firefox 97.0,,,2022-02-23 16:23:36,2022-02-23 16:23:36,0.003s,PASSED
+openBrowser(G_SiteURL),Firefox 97.0,,,2022-02-23 16:23:36,2022-02-23 16:23:45,9.176s,PASSED
+"comment(""User enters valid Credentials"")",Firefox 97.0,,,2022-02-23 16:23:45,2022-02-23 16:23:45,0.006s,PASSED
+maximizeWindow(),Firefox 97.0,,,2022-02-23 16:23:45,2022-02-23 16:23:45,0.062s,PASSED
+"click(findTestObject(""Page_CuraHomepage/btn_MakeAppointment""))",Firefox 97.0,,,2022-02-23 16:23:45,2022-02-23 16:23:46,0.812s,PASSED
+"setText(findTestObject(""Page_Login/txt_UserName""), findTestData(""TestData"").getValue(1, 1))",Firefox 97.0,,,2022-02-23 16:23:46,2022-02-23 16:23:47,0.783s,PASSED
+"setText(findTestObject(""Page_Login/txt_Password""), findTestData(""TestData"").getValue(2, 1))",Firefox 97.0,,,2022-02-23 16:23:47,2022-02-23 16:23:48,0.905s,PASSED
+"click(findTestObject(""Page_Login/btn_Login""))",Firefox 97.0,,,2022-02-23 16:23:48,2022-02-23 16:23:49,1.215s,PASSED
+"comment(""Login sucessfully"")",Firefox 97.0,,,2022-02-23 16:23:49,2022-02-23 16:23:49,0.003s,PASSED
+"click(findTestObject(""Page_AppointmentConfirmation/a_Make Appointment""))",Firefox 97.0,,,2022-02-23 16:23:49,2022-02-23 16:23:50,0.966s,PASSED
+"comment(""User Navigate to appoinmnet page"")",Firefox 97.0,,,2022-02-23 16:23:50,2022-02-23 16:23:50,0.004s,PASSED
+"verifyElementVisible(findTestObject(""Page_CuraAppointment/lst_Facility""))",Firefox 97.0,,,2022-02-23 16:23:50,2022-02-23 16:23:51,0.691s,PASSED
+"verifyElementClickable(findTestObject(""Page_CuraAppointment/lst_Facility""))",Firefox 97.0,,,2022-02-23 16:23:51,2022-02-23 16:23:51,0.495s,PASSED
+"click(findTestObject(""Page_CuraAppointment/select_""))",Firefox 97.0,,,2022-02-23 16:23:51,2022-02-23 16:23:52,0.832s,PASSED
+"verifyOptionsPresent(findTestObject(""Page_CuraAppointment/select_""), [""Tokyo CURA Healthcare Center"", ""Hongkong CURA Healthcare Center"", ""Seoul CURA Healthcare Center""])",Firefox 97.0,,,2022-02-23 16:23:52,2022-02-23 16:23:53,0.687s,PASSED
+closeBrowser(),Firefox 97.0,,,2022-02-23 16:23:53,2022-02-23 16:23:54,1.326s,PASSED
+,,,,,,,
+Test Cases/Main Test Cases/TC17_Verify the Logout Functionality,Firefox 97.0,,,2022-02-23 16:23:54,2022-02-23 16:24:09,15.437s,PASSED
+openBrowser(G_SiteURL),Firefox 97.0,,,2022-02-23 16:23:55,2022-02-23 16:24:03,7.958s,PASSED
+"click(findTestObject(""Page_CURA Healthcare Service/a_Make Appointment""))",Firefox 97.0,,,2022-02-23 16:24:03,2022-02-23 16:24:04,0.893s,PASSED
+"setText(findTestObject(""Page_Login/txt_UserName""), findTestData(""TestData"").getValue(1, 1))",Firefox 97.0,,,2022-02-23 16:24:04,2022-02-23 16:24:04,0.869s,PASSED
+"setText(findTestObject(""Page_Login/txt_Password""), findTestData(""TestData"").getValue(2, 1))",Firefox 97.0,,,2022-02-23 16:24:04,2022-02-23 16:24:05,0.988s,PASSED
+"click(findTestObject(""Page_Login/btn_Login""))",Firefox 97.0,,,2022-02-23 16:24:05,2022-02-23 16:24:07,1.138s,PASSED
+"click(findTestObject(""Page_AppointmentConfirmation/a_CURA Healthcare_menu-toggle""))",Firefox 97.0,,,2022-02-23 16:24:07,2022-02-23 16:24:08,0.905s,PASSED
+"click(findTestObject(""Page_AppointmentConfirmation/a_Logout""))",Firefox 97.0,,,2022-02-23 16:24:08,2022-02-23 16:24:09,1.567s,PASSED
+"verifyElementPresent(findTestObject(""Page_CURA Healthcare Service/a_Make Appointment""), G_ShortTimeOut)",Firefox 97.0,,,2022-02-23 16:24:09,2022-02-23 16:24:09,0.413s,PASSED
+,,,,,,,
+Test Cases/Main Test Cases/TC16_To Verify Date is Required,Firefox 97.0,,,2022-02-23 16:24:52,2022-02-23 16:25:08,15.315s,FAILED
+"comment(""Launch URL"")",Firefox 97.0,,,2022-02-23 16:24:52,2022-02-23 16:24:52,0.002s,PASSED
+openBrowser(G_SiteURL),Firefox 97.0,,,2022-02-23 16:24:52,2022-02-23 16:25:04,11.245s,PASSED
+maximizeWindow(),Firefox 97.0,,,2022-02-23 16:25:04,2022-02-23 16:25:04,0.019s,PASSED
+"click(findTestObject(""Page_CuraHomepage/btn_MakeAppointment""))",Firefox 97.0,,,2022-02-23 16:25:04,2022-02-23 16:25:04,0.786s,PASSED
+"comment(""User Click on Make Appointment Button"")",Firefox 97.0,,,2022-02-23 16:25:04,2022-02-23 16:25:04,0.003s,PASSED
+"setText(findTestObject(""Page_Login/txt_UserName""), findTestData(""TestData"").getValue(1, 1))",Firefox 97.0,,,2022-02-23 16:25:04,2022-02-23 16:25:05,0.878s,PASSED
+"setText(findTestObject(""Page_Login/txt_Password""), findTestData(""TestData"").getValue(2, 1))",Firefox 97.0,,,2022-02-23 16:25:05,2022-02-23 16:25:06,0.854s,PASSED
+"click(findTestObject(""Page_Login/btn_Login""))",Firefox 97.0,,,2022-02-23 16:25:06,2022-02-23 16:25:07,0.968s,PASSED
+"comment(""User Login Sucessfully"")",Firefox 97.0,,,2022-02-23 16:25:07,2022-02-23 16:25:07,0.002s,PASSED
+"click(findTestObject(""Page_AppointmentConfirmation/Page_CURA Healthcare Service/a_Make Appointment""))",Firefox 97.0,,,2022-02-23 16:25:07,2022-02-23 16:25:08,0.493s,FAILED

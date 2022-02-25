@@ -1,0 +1,14 @@
+{
+  "brokenTestObjects": [
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/Page_CURA Healthcare Service/a_Make Appointment",
+      "brokenLocator": "//a[@id\u003d\u0027btn-make-appointment\u0027]",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "//div/a",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/20220223_162237"
+    }
+  ]
+}
