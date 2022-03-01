@@ -1,0 +1,627 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Sanity Test Suite" time="96.083" tests="5" failures="1" errors="0">
+   <testsuite name="Sanity Test Suite" tests="5" failures="1" errors="0" time="96.083" skipped="0" timestamp="2022-03-01 13:06:40" hostname="DESKTOP-7BHQR9N$ - DESKTOP-7BHQR9N" id="Test Suites/Sanity Test Suite">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\Dell\\git\\CrossCountry\\Reports\\20220301_130621\\Sanity Test Suite\\20220301_130627"/>
+         <property name="logFiles" value="C:\\Users\\Dell\\git\\CrossCountry\\Reports\\20220301_130621\\Sanity Test Suite\\20220301_130627\\execution0.log"/>
+         <property name="attachments" value="C:\\Users\\Dell\\git\\CrossCountry\\Reports\\20220301_130621\\Sanity Test Suite\\20220301_130627\\1646120247548.png, C:\\Users\\Dell\\git\\CrossCountry\\Reports\\20220301_130621\\Sanity Test Suite\\20220301_130627\\1646120296243.png"/>
+         <property name="hostName" value="DESKTOP-7BHQR9N$ - DESKTOP-7BHQR9N"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="8.2.5.208"/>
+         <property name="browser" value="Chrome 98.0.4758.102"/>
+         <property name="hostAddress" value="192.168.127.212"/>
+         <property name="sessionId" value="5cfe8253a0e4f063dc5b1a225019a149"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList=&quot;&quot;, isApplyToDesiredCapabilities=true }"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/Main Test Cases/TC01_Verify Successful Login" time="21.843" classname="Test Cases/Main Test Cases/TC01_Verify Successful Login" status="PASSED">
+         <system-out><![CDATA[2022-03-01 13:06:41 - [TEST_CASE][PASSED] - Test Cases/Main Test Cases/TC01_Verify Successful Login: Test Cases/Main Test Cases/TC01_Verify Successful Login
+
+2022-03-01 13:06:42 - [TEST_STEP][PASSED] - Start listener action : onTestCaseStart: null
+
+2022-03-01 13:06:42 - [TEST_STEP][PASSED] - println("Successfuuly Starting"): null
+
+2022-03-01 13:06:42 - [TEST_STEP][PASSED] - comment("Story: Login to CURA system"): Story: Login to CURA system
+
+2022-03-01 13:06:43 - [MESSAGE][INFO] - Story: Login to CURA system
+
+2022-03-01 13:06:43 - [TEST_STEP][PASSED] - comment("Given that the user has the valid login information"): Given that the user has the valid login information
+
+2022-03-01 13:06:43 - [MESSAGE][INFO] - Given that the user has the valid login information
+
+2022-03-01 13:06:43 - [TEST_STEP][PASSED] - openBrowser(G_SiteURL): Browser is opened with url: 'http://demoaut.katalon.com'
+
+2022-03-01 13:06:43 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2022-03-01 13:06:44 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2022-03-01 13:06:54 - [MESSAGE][PASSED] - Browser is opened with url: 'http://demoaut.katalon.com'
+
+2022-03-01 13:06:54 - [TEST_STEP][PASSED] - click(findTestObject("Page_CuraHomepage/btn_MakeAppointment")): Object: 'Object Repository/Page_CuraHomepage/btn_MakeAppointment' is clicked on
+
+2022-03-01 13:06:55 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_CuraHomepage/btn_MakeAppointment' is clicked on
+
+2022-03-01 13:06:55 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Login/txt_UserName"), findTestData("TestData").getValue(1, 1)): Text 'John Doe' is set on object 'Object Repository/Page_Login/txt_UserName'
+
+2022-03-01 13:06:58 - [MESSAGE][PASSED] - Text 'John Doe' is set on object 'Object Repository/Page_Login/txt_UserName'
+
+2022-03-01 13:06:58 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Login/txt_Password"), findTestData("TestData").getValue(2, 1)): Text 'ThisIsNotAPassword' is set on object 'Object Repository/Page_Login/txt_Password'
+
+2022-03-01 13:06:59 - [MESSAGE][PASSED] - Text 'ThisIsNotAPassword' is set on object 'Object Repository/Page_Login/txt_Password'
+
+2022-03-01 13:06:59 - [TEST_STEP][PASSED] - comment("When he logins to CURA system"): When he logins to CURA system
+
+2022-03-01 13:06:59 - [MESSAGE][INFO] - When he logins to CURA system
+
+2022-03-01 13:06:59 - [TEST_STEP][PASSED] - click(findTestObject("Page_Login/btn_Login")): Object: 'Object Repository/Page_Login/btn_Login' is clicked on
+
+2022-03-01 13:07:01 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Login/btn_Login' is clicked on
+
+2022-03-01 13:07:01 - [TEST_STEP][PASSED] - comment("Then he should be able to login successfully"): Then he should be able to login successfully
+
+2022-03-01 13:07:01 - [MESSAGE][INFO] - Then he should be able to login successfully
+
+2022-03-01 13:07:01 - [TEST_STEP][PASSED] - landingPage = verifyElementPresent(findTestObject("Page_CuraAppointment/div_Appointment"), G_Timeout): Object 'Object Repository/Page_CuraAppointment/div_Appointment' is present
+
+2022-03-01 13:07:02 - [MESSAGE][PASSED] - Object 'Object Repository/Page_CuraAppointment/div_Appointment' is present
+
+2022-03-01 13:07:02 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2022-03-01 13:07:03 - [MESSAGE][PASSED] - Browser is closed
+
+2022-03-01 13:07:03 - [TEST_STEP][PASSED] - Start listener action : AfterTestCase: null
+
+2022-03-01 13:07:03 - [TEST_STEP][PASSED] - println("It's in After Test Case"): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Main Test Cases/TC02_Verify Successful Appointment" time="25.012" classname="Test Cases/Main Test Cases/TC02_Verify Successful Appointment" status="PASSED">
+         <system-out><![CDATA[2022-03-01 13:07:03 - [TEST_CASE][PASSED] - Test Cases/Main Test Cases/TC02_Verify Successful Appointment: Test Cases/Main Test Cases/TC02_Verify Successful Appointment
+
+2022-03-01 13:07:03 - [TEST_STEP][PASSED] - Start listener action : onTestCaseStart: null
+
+2022-03-01 13:07:03 - [TEST_STEP][PASSED] - println("Successfuuly Starting"): null
+
+2022-03-01 13:07:04 - [TEST_STEP][PASSED] - comment("Story: Book an appointment"): Story: Book an appointment
+
+2022-03-01 13:07:04 - [MESSAGE][INFO] - Story: Book an appointment
+
+2022-03-01 13:07:04 - [TEST_STEP][PASSED] - comment("Given that the user has logged into their account"): Given that the user has logged into their account
+
+2022-03-01 13:07:04 - [MESSAGE][INFO] - Given that the user has logged into their account
+
+2022-03-01 13:07:04 - [TEST_STEP][PASSED] - openBrowser(G_SiteURL): Browser is opened with url: 'http://demoaut.katalon.com'
+
+2022-03-01 13:07:04 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2022-03-01 13:07:04 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2022-03-01 13:07:12 - [MESSAGE][PASSED] - Browser is opened with url: 'http://demoaut.katalon.com'
+
+2022-03-01 13:07:12 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Common Test Cases/Login"), ["Username":"John Doe", "Password":"ThisIsNotAPassword"], STOP_ON_FAILURE): Call Test Case 'Test Cases/Common Test Cases/Login' successfully
+
+2022-03-01 13:07:12 - [TEST_CASE][PASSED] - Test Cases/Common Test Cases/Login: Test Cases/Common Test Cases/Login
+
+2022-03-01 13:07:13 - [TEST_STEP][PASSED] - click(findTestObject("Page_CuraHomepage/btn_MakeAppointment")): Object: 'Object Repository/Page_CuraHomepage/btn_MakeAppointment' is clicked on
+
+2022-03-01 13:07:14 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_CuraHomepage/btn_MakeAppointment' is clicked on
+
+2022-03-01 13:07:14 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Login/txt_UserName"), Username): Text 'John Doe' is set on object 'Object Repository/Page_Login/txt_UserName'
+
+2022-03-01 13:07:15 - [MESSAGE][PASSED] - Text 'John Doe' is set on object 'Object Repository/Page_Login/txt_UserName'
+
+2022-03-01 13:07:15 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Login/txt_Password"), Password): Text 'ThisIsNotAPassword' is set on object 'Object Repository/Page_Login/txt_Password'
+
+2022-03-01 13:07:16 - [MESSAGE][PASSED] - Text 'ThisIsNotAPassword' is set on object 'Object Repository/Page_Login/txt_Password'
+
+2022-03-01 13:07:16 - [TEST_STEP][PASSED] - click(findTestObject("Page_Login/btn_Login")): Object: 'Object Repository/Page_Login/btn_Login' is clicked on
+
+2022-03-01 13:07:18 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Login/btn_Login' is clicked on
+
+2022-03-01 13:07:18 - [TEST_STEP][PASSED] - landingPage = verifyElementPresent(findTestObject("Page_CuraAppointment/div_Appointment"), G_Timeout): Object 'Object Repository/Page_CuraAppointment/div_Appointment' is present
+
+2022-03-01 13:07:18 - [MESSAGE][PASSED] - Object 'Object Repository/Page_CuraAppointment/div_Appointment' is present
+
+2022-03-01 13:07:18 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Common Test Cases/Login' successfully
+
+2022-03-01 13:07:18 - [TEST_STEP][PASSED] - comment("And Appointment page is displayed"): And Appointment page is displayed
+
+2022-03-01 13:07:18 - [MESSAGE][INFO] - And Appointment page is displayed
+
+2022-03-01 13:07:18 - [TEST_STEP][PASSED] - if (true): Text 'Please make appointment as soon as possible.' is set on object 'Object Repository/Page_CuraAppointment/txt_Comment'
+
+2022-03-01 13:07:18 - [TEST_STEP][PASSED] - selectOptionByLabel(findTestObject("Page_CuraAppointment/lst_Facility"), "Hongkong CURA Healthcare Center", false): All options with label 'Hongkong CURA Healthcare Center' are selected in object 'Object Repository/Page_CuraAppointment/lst_Facility' 
+
+2022-03-01 13:07:19 - [MESSAGE][PASSED] - All options with label 'Hongkong CURA Healthcare Center' are selected in object 'Object Repository/Page_CuraAppointment/lst_Facility' 
+
+2022-03-01 13:07:19 - [TEST_STEP][PASSED] - check(findTestObject("Page_CuraAppointment/chk_Medicaid")): Object 'Object Repository/Page_CuraAppointment/chk_Medicaid' is checked
+
+2022-03-01 13:07:20 - [MESSAGE][PASSED] - Object 'Object Repository/Page_CuraAppointment/chk_Medicaid' is checked
+
+2022-03-01 13:07:20 - [TEST_STEP][PASSED] - check(findTestObject("Page_CuraAppointment/chk_Readmission")): Object 'Object Repository/Page_CuraAppointment/chk_Readmission' is checked
+
+2022-03-01 13:07:20 - [MESSAGE][PASSED] - Object 'Object Repository/Page_CuraAppointment/chk_Readmission' is checked
+
+2022-03-01 13:07:20 - [TEST_STEP][PASSED] - setText(findTestObject("Page_CuraAppointment/txt_VisitDate"), "27/12/2016"): Text '27/12/2016' is set on object 'Object Repository/Page_CuraAppointment/txt_VisitDate'
+
+2022-03-01 13:07:21 - [MESSAGE][PASSED] - Text '27/12/2016' is set on object 'Object Repository/Page_CuraAppointment/txt_VisitDate'
+
+2022-03-01 13:07:21 - [TEST_STEP][PASSED] - setText(findTestObject("Page_CuraAppointment/txt_Comment"), "Please make appointment as soon as possible."): Text 'Please make appointment as soon as possible.' is set on object 'Object Repository/Page_CuraAppointment/txt_Comment'
+
+2022-03-01 13:07:22 - [MESSAGE][PASSED] - Text 'Please make appointment as soon as possible.' is set on object 'Object Repository/Page_CuraAppointment/txt_Comment'
+
+2022-03-01 13:07:22 - [TEST_STEP][PASSED] - comment("When he fills in valid information in Appointment page"): When he fills in valid information in Appointment page
+
+2022-03-01 13:07:22 - [MESSAGE][INFO] - When he fills in valid information in Appointment page
+
+2022-03-01 13:07:22 - [TEST_STEP][PASSED] - click(findTestObject("Page_CuraAppointment/btn_BookAppointment")): Object: 'Object Repository/Page_CuraAppointment/btn_BookAppointment' is clicked on
+
+2022-03-01 13:07:24 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_CuraAppointment/btn_BookAppointment' is clicked on
+
+2022-03-01 13:07:24 - [TEST_STEP][PASSED] - verifyTextPresent("Appointment Confirmation", false): Text 'Appointment Confirmation' is present on page 
+
+2022-03-01 13:07:25 - [MESSAGE][PASSED] - Text 'Appointment Confirmation' is present on page 
+
+2022-03-01 13:07:25 - [TEST_STEP][PASSED] - comment("Then he should be able to book a new appointment"): Then he should be able to book a new appointment
+
+2022-03-01 13:07:25 - [MESSAGE][INFO] - Then he should be able to book a new appointment
+
+2022-03-01 13:07:25 - [TEST_STEP][PASSED] - if (true): Actual text 'Please make appointment as soon as possible.' and expected text 'Please make appointment as soon as possible.' are matched 
+
+2022-03-01 13:07:25 - [TEST_STEP][PASSED] - verifyMatch("Hongkong CURA Healthcare Center", getText(findTestObject("Page_AppointmentConfirmation/lbl_Facility")), false): Actual text 'Hongkong CURA Healthcare Center' and expected text 'Hongkong CURA Healthcare Center' are matched 
+
+2022-03-01 13:07:25 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_AppointmentConfirmation/lbl_Facility' is: 'Hongkong CURA Healthcare Center'
+
+2022-03-01 13:07:25 - [MESSAGE][PASSED] - Actual text 'Hongkong CURA Healthcare Center' and expected text 'Hongkong CURA Healthcare Center' are matched 
+
+2022-03-01 13:07:25 - [TEST_STEP][PASSED] - verifyMatch("Yes", getText(findTestObject("Page_AppointmentConfirmation/lbl_HospitalReadmission")), false): Actual text 'Yes' and expected text 'Yes' are matched 
+
+2022-03-01 13:07:25 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_AppointmentConfirmation/lbl_HospitalReadmission' is: 'Yes'
+
+2022-03-01 13:07:25 - [MESSAGE][PASSED] - Actual text 'Yes' and expected text 'Yes' are matched 
+
+2022-03-01 13:07:25 - [TEST_STEP][PASSED] - verifyMatch("Medicaid", getText(findTestObject("Page_AppointmentConfirmation/lbl_Program")), false): Actual text 'Medicaid' and expected text 'Medicaid' are matched 
+
+2022-03-01 13:07:26 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_AppointmentConfirmation/lbl_Program' is: 'Medicaid'
+
+2022-03-01 13:07:26 - [MESSAGE][PASSED] - Actual text 'Medicaid' and expected text 'Medicaid' are matched 
+
+2022-03-01 13:07:26 - [TEST_STEP][PASSED] - verifyMatch("27/12/2016", getText(findTestObject("Page_AppointmentConfirmation/lbl_VisitDate")), false): Actual text '27/12/2016' and expected text '27/12/2016' are matched 
+
+2022-03-01 13:07:26 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_AppointmentConfirmation/lbl_VisitDate' is: '27/12/2016'
+
+2022-03-01 13:07:26 - [MESSAGE][PASSED] - Actual text '27/12/2016' and expected text '27/12/2016' are matched 
+
+2022-03-01 13:07:26 - [TEST_STEP][PASSED] - verifyMatch("Please make appointment as soon as possible.", getText(findTestObject("Page_AppointmentConfirmation/lbl_Comment")), false): Actual text 'Please make appointment as soon as possible.' and expected text 'Please make appointment as soon as possible.' are matched 
+
+2022-03-01 13:07:27 - [MESSAGE][PASSED] - Text of object 'Object Repository/Page_AppointmentConfirmation/lbl_Comment' is: 'Please make appointment as soon as possible.'
+
+2022-03-01 13:07:27 - [MESSAGE][PASSED] - Actual text 'Please make appointment as soon as possible.' and expected text 'Please make appointment as soon as possible.' are matched 
+
+2022-03-01 13:07:27 - [TEST_STEP][PASSED] - takeScreenshot(): Taking screenshot successfully
+
+2022-03-01 13:07:27 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|C:\\Users\\Dell\\git\\CrossCountry\\Reports\\20220301_130621\\Sanity Test Suite\\20220301_130627\\1646120247548.png]]
+
+2022-03-01 13:07:27 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2022-03-01 13:07:28 - [MESSAGE][PASSED] - Browser is closed
+
+2022-03-01 13:07:28 - [TEST_STEP][PASSED] - Start listener action : AfterTestCase: null
+
+2022-03-01 13:07:28 - [TEST_STEP][PASSED] - println("It's in After Test Case"): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Main Test Cases/TC05_Verify Functionality Of Facility DropDown" time="16.611" classname="Test Cases/Main Test Cases/TC05_Verify Functionality Of Facility DropDown" status="PASSED">
+         <system-out><![CDATA[2022-03-01 13:07:28 - [TEST_CASE][PASSED] - Test Cases/Main Test Cases/TC05_Verify Functionality Of Facility DropDown: Test Cases/Main Test Cases/TC05_Verify Functionality Of Facility DropDown
+
+2022-03-01 13:07:28 - [TEST_STEP][PASSED] - Start listener action : onTestCaseStart: null
+
+2022-03-01 13:07:28 - [TEST_STEP][PASSED] - println("Successfuuly Starting"): null
+
+2022-03-01 13:07:29 - [TEST_STEP][PASSED] - comment("Launch URL"): Launch URL
+
+2022-03-01 13:07:29 - [MESSAGE][INFO] - Launch URL
+
+2022-03-01 13:07:29 - [TEST_STEP][PASSED] - openBrowser(G_SiteURL): Browser is opened with url: 'http://demoaut.katalon.com'
+
+2022-03-01 13:07:29 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2022-03-01 13:07:29 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2022-03-01 13:07:36 - [MESSAGE][PASSED] - Browser is opened with url: 'http://demoaut.katalon.com'
+
+2022-03-01 13:07:36 - [TEST_STEP][PASSED] - comment("User enters valid Credentials"): User enters valid Credentials
+
+2022-03-01 13:07:36 - [MESSAGE][INFO] - User enters valid Credentials
+
+2022-03-01 13:07:36 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2022-03-01 13:07:36 - [MESSAGE][PASSED] - Current window maximized
+
+2022-03-01 13:07:36 - [TEST_STEP][PASSED] - click(findTestObject("Page_CuraHomepage/btn_MakeAppointment")): Object: 'Object Repository/Page_CuraHomepage/btn_MakeAppointment' is clicked on
+
+2022-03-01 13:07:37 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_CuraHomepage/btn_MakeAppointment' is clicked on
+
+2022-03-01 13:07:37 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Login/txt_UserName"), findTestData("TestData").getValue(1, 1)): Text 'John Doe' is set on object 'Object Repository/Page_Login/txt_UserName'
+
+2022-03-01 13:07:38 - [MESSAGE][PASSED] - Text 'John Doe' is set on object 'Object Repository/Page_Login/txt_UserName'
+
+2022-03-01 13:07:38 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Login/txt_Password"), findTestData("TestData").getValue(2, 1)): Text 'ThisIsNotAPassword' is set on object 'Object Repository/Page_Login/txt_Password'
+
+2022-03-01 13:07:39 - [MESSAGE][PASSED] - Text 'ThisIsNotAPassword' is set on object 'Object Repository/Page_Login/txt_Password'
+
+2022-03-01 13:07:39 - [TEST_STEP][PASSED] - click(findTestObject("Page_Login/btn_Login")): Object: 'Object Repository/Page_Login/btn_Login' is clicked on
+
+2022-03-01 13:07:41 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Login/btn_Login' is clicked on
+
+2022-03-01 13:07:41 - [TEST_STEP][PASSED] - comment("Login sucessfully"): Login sucessfully
+
+2022-03-01 13:07:41 - [MESSAGE][INFO] - Login sucessfully
+
+2022-03-01 13:07:41 - [TEST_STEP][PASSED] - click(findTestObject("Page_AppointmentConfirmation/a_Make Appointment")): Object: 'Object Repository/Page_AppointmentConfirmation/a_Make Appointment' is clicked on
+
+2022-03-01 13:07:41 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_AppointmentConfirmation/a_Make Appointment' is clicked on
+
+2022-03-01 13:07:41 - [TEST_STEP][PASSED] - comment("User Navigate to appoinmnet page"): User Navigate to appoinmnet page
+
+2022-03-01 13:07:41 - [MESSAGE][INFO] - User Navigate to appoinmnet page
+
+2022-03-01 13:07:41 - [TEST_STEP][PASSED] - verifyElementVisible(findTestObject("Page_CuraAppointment/lst_Facility")): Object 'Object Repository/Page_CuraAppointment/lst_Facility' is visible
+
+2022-03-01 13:07:42 - [MESSAGE][PASSED] - Object 'Object Repository/Page_CuraAppointment/lst_Facility' is visible
+
+2022-03-01 13:07:42 - [TEST_STEP][PASSED] - verifyElementClickable(findTestObject("Page_CuraAppointment/lst_Facility")): Object 'Object Repository/Page_CuraAppointment/lst_Facility' is clickable
+
+2022-03-01 13:07:42 - [MESSAGE][PASSED] - Object 'Object Repository/Page_CuraAppointment/lst_Facility' is clickable
+
+2022-03-01 13:07:42 - [TEST_STEP][PASSED] - click(findTestObject("Page_CuraAppointment/select_")): Object: 'Object Repository/Page_CuraAppointment/select_' is clicked on
+
+2022-03-01 13:07:43 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_CuraAppointment/select_' is clicked on
+
+2022-03-01 13:07:43 - [TEST_STEP][PASSED] - verifyOptionsPresent(findTestObject("Page_CuraAppointment/select_"), ["Tokyo CURA Healthcare Center", "Hongkong CURA Healthcare Center", "Seoul CURA Healthcare Center"]): Options [Tokyo CURA Healthcare Center, Hongkong CURA Healthcare Center, Seoul CURA Healthcare Center] present.
+
+2022-03-01 13:07:43 - [MESSAGE][PASSED] - Options [Tokyo CURA Healthcare Center, Hongkong CURA Healthcare Center, Seoul CURA Healthcare Center] present.
+
+2022-03-01 13:07:43 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2022-03-01 13:07:45 - [MESSAGE][PASSED] - Browser is closed
+
+2022-03-01 13:07:45 - [TEST_STEP][PASSED] - Start listener action : AfterTestCase: null
+
+2022-03-01 13:07:45 - [TEST_STEP][PASSED] - println("It's in After Test Case"): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Main Test Cases/TC17_Verify the Logout Functionality" time="14.222" classname="Test Cases/Main Test Cases/TC17_Verify the Logout Functionality" status="PASSED">
+         <system-out><![CDATA[2022-03-01 13:07:45 - [TEST_CASE][PASSED] - Test Cases/Main Test Cases/TC17_Verify the Logout Functionality: Test Cases/Main Test Cases/TC17_Verify the Logout Functionality
+
+2022-03-01 13:07:45 - [TEST_STEP][PASSED] - Start listener action : onTestCaseStart: null
+
+2022-03-01 13:07:45 - [TEST_STEP][PASSED] - println("Successfuuly Starting"): null
+
+2022-03-01 13:07:45 - [TEST_STEP][PASSED] - openBrowser(G_SiteURL): Browser is opened with url: 'http://demoaut.katalon.com'
+
+2022-03-01 13:07:45 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2022-03-01 13:07:45 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2022-03-01 13:07:52 - [MESSAGE][PASSED] - Browser is opened with url: 'http://demoaut.katalon.com'
+
+2022-03-01 13:07:52 - [TEST_STEP][PASSED] - click(findTestObject("Page_CURA Healthcare Service/a_Make Appointment")): Object: 'Object Repository/Page_CURA Healthcare Service/a_Make Appointment' is clicked on
+
+2022-03-01 13:07:53 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_CURA Healthcare Service/a_Make Appointment' is clicked on
+
+2022-03-01 13:07:53 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Login/txt_UserName"), findTestData("TestData").getValue(1, 1)): Text 'John Doe' is set on object 'Object Repository/Page_Login/txt_UserName'
+
+2022-03-01 13:07:54 - [MESSAGE][PASSED] - Text 'John Doe' is set on object 'Object Repository/Page_Login/txt_UserName'
+
+2022-03-01 13:07:54 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Login/txt_Password"), findTestData("TestData").getValue(2, 1)): Text 'ThisIsNotAPassword' is set on object 'Object Repository/Page_Login/txt_Password'
+
+2022-03-01 13:07:55 - [MESSAGE][PASSED] - Text 'ThisIsNotAPassword' is set on object 'Object Repository/Page_Login/txt_Password'
+
+2022-03-01 13:07:55 - [TEST_STEP][PASSED] - click(findTestObject("Page_Login/btn_Login")): Object: 'Object Repository/Page_Login/btn_Login' is clicked on
+
+2022-03-01 13:07:57 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Login/btn_Login' is clicked on
+
+2022-03-01 13:07:57 - [TEST_STEP][PASSED] - click(findTestObject("Page_AppointmentConfirmation/a_CURA Healthcare_menu-toggle")): Object: 'Object Repository/Page_AppointmentConfirmation/a_CURA Healthcare_menu-toggle' is clicked on
+
+2022-03-01 13:07:57 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_AppointmentConfirmation/a_CURA Healthcare_menu-toggle' is clicked on
+
+2022-03-01 13:07:57 - [TEST_STEP][PASSED] - click(findTestObject("Page_AppointmentConfirmation/a_Logout")): Object: 'Object Repository/Page_AppointmentConfirmation/a_Logout' is clicked on
+
+2022-03-01 13:07:59 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_AppointmentConfirmation/a_Logout' is clicked on
+
+2022-03-01 13:07:59 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Page_CURA Healthcare Service/a_Make Appointment"), G_ShortTimeOut): Object 'Object Repository/Page_CURA Healthcare Service/a_Make Appointment' is present
+
+2022-03-01 13:07:59 - [MESSAGE][PASSED] - Object 'Object Repository/Page_CURA Healthcare Service/a_Make Appointment' is present
+
+2022-03-01 13:07:59 - [TEST_STEP][PASSED] - Start listener action : AfterTestCase: null
+
+2022-03-01 13:07:59 - [TEST_STEP][PASSED] - println("It's in After Test Case"): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Main Test Cases/TC16_To Verify Date is Required" time="17.058" classname="Test Cases/Main Test Cases/TC16_To Verify Date is Required" status="FAILED">
+         <failure type="FAILED" message="Test Cases/Main Test Cases/TC16_To Verify Date is Required FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:74)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:620)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$0.call(Unknown Source)
+	at TC16_To Verify Date is Required.run(TC16_To Verify Date is Required:38)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:442)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:433)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:412)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:404)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:281)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:202)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:164)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:105)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1646120187481.run(TempTestSuite1646120187481.groovy:36)
+Caused by: java.lang.IllegalArgumentException: Object is null
+	at com.kms.katalon.core.helper.KeywordHelper.checkTestObjectParameter(KeywordHelper.java:33)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:62)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 19 more
+"/>
+         <system-out><![CDATA[2022-03-01 13:07:59 - [TEST_CASE][FAILED] - Test Cases/Main Test Cases/TC16_To Verify Date is Required: Test Cases/Main Test Cases/TC16_To Verify Date is Required FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:74)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:620)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$0.call(Unknown Source)
+	at TC16_To Verify Date is Required.run(TC16_To Verify Date is Required:38)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:442)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:433)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:412)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:404)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:281)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:202)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:164)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:105)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1646120187481.run(TempTestSuite1646120187481.groovy:36)
+Caused by: java.lang.IllegalArgumentException: Object is null
+	at com.kms.katalon.core.helper.KeywordHelper.checkTestObjectParameter(KeywordHelper.java:33)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:62)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 19 more
+
+
+2022-03-01 13:07:59 - [TEST_STEP][PASSED] - Start listener action : onTestCaseStart: null
+
+2022-03-01 13:07:59 - [TEST_STEP][PASSED] - println("Successfuuly Starting"): null
+
+2022-03-01 13:07:59 - [TEST_STEP][PASSED] - comment("Launch URL"): Launch URL
+
+2022-03-01 13:08:00 - [MESSAGE][INFO] - Launch URL
+
+2022-03-01 13:08:00 - [TEST_STEP][PASSED] - openBrowser(G_SiteURL): Browser is opened with url: 'http://demoaut.katalon.com'
+
+2022-03-01 13:08:00 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2022-03-01 13:08:00 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2022-03-01 13:08:00 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2022-03-01 13:08:11 - [MESSAGE][PASSED] - Browser is opened with url: 'http://demoaut.katalon.com'
+
+2022-03-01 13:08:11 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2022-03-01 13:08:11 - [MESSAGE][PASSED] - Current window maximized
+
+2022-03-01 13:08:11 - [TEST_STEP][PASSED] - click(findTestObject("Page_CuraHomepage/btn_MakeAppointment")): Object: 'Object Repository/Page_CuraHomepage/btn_MakeAppointment' is clicked on
+
+2022-03-01 13:08:12 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_CuraHomepage/btn_MakeAppointment' is clicked on
+
+2022-03-01 13:08:12 - [TEST_STEP][PASSED] - comment("User Click on Make Appointment Button"): User Click on Make Appointment Button
+
+2022-03-01 13:08:12 - [MESSAGE][INFO] - User Click on Make Appointment Button
+
+2022-03-01 13:08:12 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Login/txt_UserName"), findTestData("TestData").getValue(1, 1)): Text 'John Doe' is set on object 'Object Repository/Page_Login/txt_UserName'
+
+2022-03-01 13:08:13 - [MESSAGE][PASSED] - Text 'John Doe' is set on object 'Object Repository/Page_Login/txt_UserName'
+
+2022-03-01 13:08:13 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Login/txt_Password"), findTestData("TestData").getValue(2, 1)): Text 'ThisIsNotAPassword' is set on object 'Object Repository/Page_Login/txt_Password'
+
+2022-03-01 13:08:14 - [MESSAGE][PASSED] - Text 'ThisIsNotAPassword' is set on object 'Object Repository/Page_Login/txt_Password'
+
+2022-03-01 13:08:14 - [TEST_STEP][PASSED] - click(findTestObject("Page_Login/btn_Login")): Object: 'Object Repository/Page_Login/btn_Login' is clicked on
+
+2022-03-01 13:08:16 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Login/btn_Login' is clicked on
+
+2022-03-01 13:08:16 - [TEST_STEP][PASSED] - comment("User Login Sucessfully"): User Login Sucessfully
+
+2022-03-01 13:08:16 - [MESSAGE][INFO] - User Login Sucessfully
+
+2022-03-01 13:08:16 - [TEST_STEP][FAILED] - click(findTestObject("Page_AppointmentConfirmation/Page_CURA Healthcare Service/a_Make Appointment")): Unable to click on object (Root cause: com.kms.katalon.core.exception.StepFailedException: Unable to click on object
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:74)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:620)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$0.call(Unknown Source)
+	at TC16_To Verify Date is Required.run(TC16_To Verify Date is Required:38)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:442)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:433)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:412)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:404)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:281)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:202)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:164)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:105)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1646120187481.run(TempTestSuite1646120187481.groovy:36)
+Caused by: java.lang.IllegalArgumentException: Object is null
+	at com.kms.katalon.core.helper.KeywordHelper.checkTestObjectParameter(KeywordHelper.java:33)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:62)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:74)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:620)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$0.call(Unknown Source)
+	at Script1645427387185.run(Script1645427387185.groovy:38)
+	... 13 more
+)
+
+2022-03-01 13:08:16 - [MESSAGE][WARNING] - Test object with id 'Object Repository/Page_AppointmentConfirmation/Page_CURA Healthcare Service/a_Make Appointment' does not exist
+
+2022-03-01 13:08:16 - [MESSAGE][WARNING] - Test object with id 'Object Repository/' does not exist
+
+2022-03-01 13:08:16 - [MESSAGE][FAILED] - Unable to click on object (Root cause: com.kms.katalon.core.exception.StepFailedException: Unable to click on object
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:74)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:620)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$0.call(Unknown Source)
+	at TC16_To Verify Date is Required.run(TC16_To Verify Date is Required:38)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:442)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:433)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:412)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:404)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:281)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:202)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:164)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:105)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1646120187481.run(TempTestSuite1646120187481.groovy:36)
+Caused by: java.lang.IllegalArgumentException: Object is null
+	at com.kms.katalon.core.helper.KeywordHelper.checkTestObjectParameter(KeywordHelper.java:33)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:62)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:74)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:620)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$0.call(Unknown Source)
+	at Script1645427387185.run(Script1645427387185.groovy:38)
+	... 13 more
+)
+[[ATTACHMENT|C:\\Users\\Dell\\git\\CrossCountry\\Reports\\20220301_130621\\Sanity Test Suite\\20220301_130627\\1646120296243.png]]
+
+2022-03-01 13:08:16 - [TEST_STEP][PASSED] - Start listener action : AfterTestCase: null
+
+2022-03-01 13:08:16 - [TEST_STEP][PASSED] - println("It's in After Test Case"): null]]></system-out>
+         <system-err><![CDATA[2022-03-01 13:07:59 - [TEST_CASE][FAILED] - Test Cases/Main Test Cases/TC16_To Verify Date is Required: Test Cases/Main Test Cases/TC16_To Verify Date is Required FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:74)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:620)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$0.call(Unknown Source)
+	at TC16_To Verify Date is Required.run(TC16_To Verify Date is Required:38)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:442)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:433)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:412)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:404)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:281)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:202)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:164)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:105)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1646120187481.run(TempTestSuite1646120187481.groovy:36)
+Caused by: java.lang.IllegalArgumentException: Object is null
+	at com.kms.katalon.core.helper.KeywordHelper.checkTestObjectParameter(KeywordHelper.java:33)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:62)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 19 more]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2022-03-01 13:06:40 - [TEST_SUITE][FAILED] - Sanity Test Suite: Test Cases/Main Test Cases/TC16_To Verify Date is Required FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:74)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:620)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$0.call(Unknown Source)
+	at TC16_To Verify Date is Required.run(TC16_To Verify Date is Required:38)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:442)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:433)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:412)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:404)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:281)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:202)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:164)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:105)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1646120187481.run(TempTestSuite1646120187481.groovy:36)
+Caused by: java.lang.IllegalArgumentException: Object is null
+	at com.kms.katalon.core.helper.KeywordHelper.checkTestObjectParameter(KeywordHelper.java:33)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:62)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 19 more]]></system-out>
+      <system-err><![CDATA[2022-03-01 13:06:40 - [TEST_SUITE][FAILED] - Sanity Test Suite: Test Cases/Main Test Cases/TC16_To Verify Date is Required FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:74)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:40)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:620)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$0.call(Unknown Source)
+	at TC16_To Verify Date is Required.run(TC16_To Verify Date is Required:38)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:442)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:433)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:412)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:404)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:281)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:202)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:164)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:105)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1646120187481.run(TempTestSuite1646120187481.groovy:36)
+Caused by: java.lang.IllegalArgumentException: Object is null
+	at com.kms.katalon.core.helper.KeywordHelper.checkTestObjectParameter(KeywordHelper.java:33)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:62)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 19 more]]></system-err>
+   </testsuite>
+</testsuites>
