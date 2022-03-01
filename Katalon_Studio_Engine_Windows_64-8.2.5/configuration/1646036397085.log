@@ -1,0 +1,37 @@
+
+
+INFO: Katalon Version: 8.2.5
+INFO: Command-line arguments: -runMode=console -projectPath=C:\Users\Dell\git\CrossCountry\CrossCountry.prj -retry=0 -testSuitePath=Test Suites/Regression Test Suite -browserType=Chrome -executionProfile=default
+INFO: User working dir: C:\Users\Dell\Downloads\katlon\Katalon_Studio_Engine_Windows_64-8.2.5
+INFO: Error log: C:/Windows/Temp/session-0019b612/.metadata/.log
+INFO: Katalon KatOne server URL: https://admin.katalon.com
+INFO: Katalon TestOps server URL: https://testops.katalon.io
+INFO: Katalon Store server URL: https://store.katalon.com
+INFO: User home: C:\Windows\system32\config\systemprofile
+INFO: Java vendor: Azul Systems, Inc.
+INFO: Java version: 1.8.0_282
+INFO: Local OS: Windows 10 64bit
+INFO: CPU load: 100%
+INFO: Total memory: 8080 MB
+INFO: Free memory: 1462 MB
+Start getting machine ID on Windows
+Start appending additional signatures
+hardwareSerialNumber 
+osDependentUsername system
+End appending additional signatures d058ab59-1797-4384-8a2a-7679e493c1b7__system
+End getting machine ID on Windows 921a61ee628be57dcced0c86b94d5793
+INFO: Machine ID: 921a61ee628be57dcced0c86b94d5793
+Warning: NLS missing message: ConsoleMain_MSG_DEVOPS_LICENSE_COMPATIBILITY in: com.kms.katalon.execution.constants.executionMessages
+Warning: NLS missing message: ConsoleMain_MSG_NON_DEVOPS_LICENSE_COMPATIBLITY in: com.kms.katalon.execution.constants.executionMessages
+INFO: Your environment is compatible with the Katalon Runtime Engine NODE-LOCKED or FLOATING license. For a fixed machine ID, use a NODE-LOCKED license; for a dynamic machine ID, use a FLOATING license.
+
+
+Activating...
+Start activating offline...
+Search for valid offline licenses in folder: C:\Windows\system32\config\systemprofile\.katalon\license
+The number of valid offline licenses: 0
+Start activating online...
+log4j:WARN No appenders could be found for logger (org.apache.http.client.protocol.RequestAddCookies).
+log4j:WARN Please initialize the log4j system properly.
+Katalon TestOps: Unexpected response, URL: https://admin.katalon.com/oauth/token, Status: 400, Response: {"error":"invalid_grant","error_description":"Invalid credentials."}
+All launchers terminated
