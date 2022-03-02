@@ -32,5 +32,7 @@ public class Login {
 		WebUI.setText(findTestObject('Page_Login/txt_Password'), findTestData('TestData').getValue(2, 1))
 
 		WebUI.click(findTestObject('Page_Login/btn_Login'))
+
+		WebUI.click(findTestObject('Page_CuraHomepage/btn_MakeAppointment'))
 	}
 }
