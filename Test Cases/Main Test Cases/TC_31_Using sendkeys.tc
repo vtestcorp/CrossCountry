@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_31_Using sendkeys</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>803d316f-c71d-446a-9ceb-f7d3a96f7ca1</testCaseGuid>
+</TestCaseEntity>
