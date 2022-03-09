@@ -1,0 +1,11 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Practice,Chrome 98.0.4758.102,,,2022-03-02 14:16:49,2022-03-02 14:17:16,26.767s,PASSED
+,,,,,,,
+Test Cases/Main Test Cases/TC27_Practice,Chrome 98.0.4758.102,,,2022-03-02 14:16:50,2022-03-02 14:17:16,25.850s,PASSED
+Start listener action : onTestCaseStart,Chrome 98.0.4758.102,,,2022-03-02 14:16:50,2022-03-02 14:16:50,0.005s,PASSED
+Start listener action : sampleBeforeTestCase,Chrome 98.0.4758.102,,,2022-03-02 14:16:50,2022-03-02 14:17:00,9.288s,PASSED
+maximizeWindow(),Chrome 98.0.4758.102,,,2022-03-02 14:17:00,2022-03-02 14:17:00,0.228s,PASSED
+com.custom.Login.loginKeyword(),Chrome 98.0.4758.102,,,2022-03-02 14:17:00,2022-03-02 14:17:14,13.879s,PASSED
+"verifyCheckpoint(findCheckpoint(""Checkpoints/CheckpointData2""), false)",Chrome 98.0.4758.102,,,2022-03-02 14:17:14,2022-03-02 14:17:15,0.286s,PASSED
+Start listener action : AfterTestCase,Chrome 98.0.4758.102,,,2022-03-02 14:17:15,2022-03-02 14:17:15,0.002s,PASSED
+Start listener action : sampleAfterTestCase,Chrome 98.0.4758.102,,,2022-03-02 14:17:15,2022-03-02 14:17:16,1.464s,PASSED

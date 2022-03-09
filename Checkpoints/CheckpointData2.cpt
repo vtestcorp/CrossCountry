@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkpoint>
+   <description></description>
+   <name>CheckpointData2</name>
+   <tag></tag>
+   <source-info>
+      <is-from-test-data>true</is-from-test-data>
+      <source-url>Data Files/TestData</source-url>
+   </source-info>
+   <taken-date>2022-03-02T06:30:16.479</taken-date>
+   <column-names>
+      <column-name>Username</column-name>
+      <column-name>Password</column-name>
+      <column-name>Invalid UserName</column-name>
+      <column-name>Invalid Password</column-name>
+      <column-name>Appointment Date</column-name>
+   </column-names>
+   <checkpoint-data><![CDATA[[
+  [
+    {
+      "value": "John Doe",
+      "checked": false
+    },
+    {
+      "value": "ThisIsNotAPassword",
+      "checked": false
+    },
+    {
+      "value": "John DO",
+      "checked": false
+    },
+    {
+      "value": "ThisIsNotPass",
+      "checked": false
+    },
+    {
+      "value": "5/3/22",
+      "checked": false
+    }
+  ],
+  [
+    {
+      "value": "John Test1112",
+      "checked": false
+    },
+    {
+      "value": "Vtest@123",
+      "checked": false
+    },
+    {
+      "checked": false
+    },
+    {
+      "checked": false
+    },
+    {
+      "checked": false
+    }
+  ]
+]]]></checkpoint-data>
+</checkpoint>

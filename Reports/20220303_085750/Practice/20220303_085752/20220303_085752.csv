@@ -1,0 +1,23 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Practice,Chrome 98.0.4758.102,,,2022-03-03 08:58:00,2022-03-03 08:58:26,25.240s,PASSED
+,,,,,,,
+Test Cases/Main Test Cases/TC01_Verify Successful Login,Chrome 98.0.4758.102,"Verify if users can login successful. 
+
+Steps:
+- Click on 'Book Appointment' button to login
+- Input username and password
+- Click on 'Login' button
+
+Expected result:
+'Appointment' section is displayed after successful login",,2022-03-03 08:58:01,2022-03-03 08:58:26,24.328s,PASSED
+Start listener action : sampleBeforeTestCase,Chrome 98.0.4758.102,,,2022-03-03 08:58:02,2022-03-03 08:58:17,14.767s,PASSED
+"comment(""Story: Login to CURA system"")",Chrome 98.0.4758.102,,,2022-03-03 08:58:17,2022-03-03 08:58:17,0.151s,PASSED
+"comment(""Given that the user has the valid login information"")",Chrome 98.0.4758.102,,,2022-03-03 08:58:17,2022-03-03 08:58:17,0.015s,PASSED
+"click(findTestObject(""Page_CuraHomepage/btn_MakeAppointment""))",Chrome 98.0.4758.102,,,2022-03-03 08:58:17,2022-03-03 08:58:19,1.337s,PASSED
+"setText(findTestObject(""Page_Login/txt_UserName""), findTestData(""TestData"").getValue(1, 1))",Chrome 98.0.4758.102,,,2022-03-03 08:58:19,2022-03-03 08:58:21,2.351s,PASSED
+"setText(findTestObject(""Page_Login/txt_Password""), findTestData(""TestData"").getValue(2, 1))",Chrome 98.0.4758.102,,,2022-03-03 08:58:21,2022-03-03 08:58:22,1.038s,PASSED
+"comment(""When he logins to CURA system"")",Chrome 98.0.4758.102,,,2022-03-03 08:58:22,2022-03-03 08:58:22,0.017s,PASSED
+"click(findTestObject(""Page_Login/btn_Login""))",Chrome 98.0.4758.102,,,2022-03-03 08:58:22,2022-03-03 08:58:24,1.983s,PASSED
+"comment(""Then he should be able to login successfully"")",Chrome 98.0.4758.102,,,2022-03-03 08:58:24,2022-03-03 08:58:24,0.008s,PASSED
+"landingPage = verifyElementPresent(findTestObject(""Page_CuraAppointment/div_Appointment""), G_Timeout)",Chrome 98.0.4758.102,,,2022-03-03 08:58:24,2022-03-03 08:58:25,0.543s,PASSED
+Start listener action : sampleAfterTestCase,Chrome 98.0.4758.102,,,2022-03-03 08:58:25,2022-03-03 08:58:26,0.827s,PASSED

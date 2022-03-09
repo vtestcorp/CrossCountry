@@ -3,8 +3,6 @@ import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
-import org.testng.annotations.BeforeTest
-
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import com.kms.katalon.core.model.FailureHandling as FailureHandling
 import com.kms.katalon.core.testcase.TestCase as TestCase
@@ -24,24 +22,28 @@ import com.kms.katalon.core.annotation.AfterTestSuite
 import com.kms.katalon.core.context.TestCaseContext
 import com.kms.katalon.core.context.TestSuiteContext
 
-class Listener {
+class NewTestListener {
 	/**
 	 * Executes before every test case starts.
 	 * @param testCaseContext related information of the executed test case.
 	 */
-	
 	@BeforeTestCase
-		def onTestCaseStart() {
-			println("Successfuuly Starting")
-		}
-	
+	def sampleBeforeTestCase(TestCaseContext testCaseContext) {
+		println testCaseContext.getTestCaseId()
+		println testCaseContext.getTestCaseVariables()
+		WebUI.openBrowser(GlobalVariable.G_SiteURL)
+	}
+
 	/**
 	 * Executes after every test case ends.
 	 * @param testCaseContext related information of the executed test case.
 	 */
 	@AfterTestCase
-	def AfterTestCase(TestCaseContext testCaseContext) {
-    println("It's in After Test Case")
+	def sampleAfterTestCase(TestCaseContext testCaseContext) {
+		println testCaseContext.getTestCaseId()
+		println testCaseContext.getTestCaseStatus()
+		WebUI.closeBrowser()
+		
 	}
 
 	/**
@@ -49,8 +51,8 @@ class Listener {
 	 * @param testSuiteContext: related information of the executed test suite.
 	 */
 	@BeforeTestSuite
-	def BeforeTestSuite(TestSuiteContext testSuiteContext) {
-		println("It's in Before Suite")
+	def sampleBeforeTestSuite(TestSuiteContext testSuiteContext) {
+		println testSuiteContext.getTestSuiteId()
 	}
 
 	/**
@@ -58,8 +60,7 @@ class Listener {
 	 * @param testSuiteContext: related information of the executed test suite.
 	 */
 	@AfterTestSuite
-	def AfterTestSuite(TestSuiteContext testSuiteContext) {
-		println(" It's in After Suite")
-		
+	def sampleAfterTestSuite(TestSuiteContext testSuiteContext) {
+		println testSuiteContext.getTestSuiteId()
 	}
 }

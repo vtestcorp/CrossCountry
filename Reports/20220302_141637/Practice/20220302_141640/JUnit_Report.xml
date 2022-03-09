@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Practice" time="26.767" tests="1" failures="0" errors="0">
+   <testsuite name="Practice" tests="1" failures="0" errors="0" time="26.767" skipped="0" timestamp="2022-03-02 14:16:49" hostname="DELL - DESKTOP-EI76RR5" id="Test Suites/Practice">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\DELL\\git\\CrossCountry1\\CrossCountry\\Reports\\20220302_141637\\Practice\\20220302_141640"/>
+         <property name="logFiles" value="C:\\Users\\DELL\\git\\CrossCountry1\\CrossCountry\\Reports\\20220302_141637\\Practice\\20220302_141640\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="DELL - DESKTOP-EI76RR5"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="8.2.5.208"/>
+         <property name="browser" value="Chrome 98.0.4758.102"/>
+         <property name="hostAddress" value="192.168.0.138"/>
+         <property name="sessionId" value="249ed55d55acafb81ca86e64f8180698"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList=&quot;&quot;, isApplyToDesiredCapabilities=true }"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/Main Test Cases/TC27_Practice" time="25.85" classname="Test Cases/Main Test Cases/TC27_Practice" status="PASSED">
+         <system-out><![CDATA[2022-03-02 14:16:50 - [TEST_CASE][PASSED] - Test Cases/Main Test Cases/TC27_Practice: Test Cases/Main Test Cases/TC27_Practice
+
+2022-03-02 14:16:50 - [TEST_STEP][PASSED] - Start listener action : onTestCaseStart: null
+
+2022-03-02 14:16:50 - [TEST_STEP][PASSED] - println("Successfuuly Starting"): null
+
+2022-03-02 14:16:50 - [TEST_STEP][PASSED] - Start listener action : sampleBeforeTestCase: Browser is opened with url: 'http://demoaut.katalon.com'
+
+2022-03-02 14:16:50 - [TEST_STEP][PASSED] - println(testCaseContext.getTestCaseId()): null
+
+2022-03-02 14:16:50 - [TEST_STEP][PASSED] - println(testCaseContext.getTestCaseVariables()): null
+
+2022-03-02 14:16:50 - [TEST_STEP][PASSED] - openBrowser(G_SiteURL): Browser is opened with url: 'http://demoaut.katalon.com'
+
+2022-03-02 14:16:51 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2022-03-02 14:16:51 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2022-03-02 14:17:00 - [MESSAGE][PASSED] - Browser is opened with url: 'http://demoaut.katalon.com'
+
+2022-03-02 14:17:00 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2022-03-02 14:17:00 - [MESSAGE][PASSED] - Current window maximized
+
+2022-03-02 14:17:00 - [TEST_STEP][PASSED] - com.custom.Login.loginKeyword(): com.custom.Login.loginKeyword is PASSED
+
+2022-03-02 14:17:01 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2022-03-02 14:17:01 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2022-03-02 14:17:01 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2022-03-02 14:17:09 - [MESSAGE][PASSED] - Browser is opened with url: 'http://demoaut.katalon.com'
+
+2022-03-02 14:17:10 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_CURA Healthcare Service/a_Make Appointment' is clicked on
+
+2022-03-02 14:17:12 - [MESSAGE][PASSED] - Text 'John Doe' is set on object 'Object Repository/Page_Login/txt_UserName'
+
+2022-03-02 14:17:13 - [MESSAGE][PASSED] - Text 'ThisIsNotAPassword' is set on object 'Object Repository/Page_Login/txt_Password'
+
+2022-03-02 14:17:14 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Login/btn_Login' is clicked on
+
+2022-03-02 14:17:14 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_CuraHomepage/btn_MakeAppointment' is clicked on
+
+2022-03-02 14:17:14 - [MESSAGE][PASSED] - com.custom.Login.loginKeyword is PASSED
+
+2022-03-02 14:17:14 - [TEST_STEP][PASSED] - verifyCheckpoint(findCheckpoint("Checkpoints/CheckpointData2"), false): Checkpoint data and Source data are matched
+
+2022-03-02 14:17:15 - [MESSAGE][PASSED] - Checkpoint data and Source data are matched
+
+2022-03-02 14:17:15 - [TEST_STEP][PASSED] - Start listener action : AfterTestCase: null
+
+2022-03-02 14:17:15 - [TEST_STEP][PASSED] - println("It's in After Test Case"): null
+
+2022-03-02 14:17:15 - [TEST_STEP][PASSED] - Start listener action : sampleAfterTestCase: Browser is closed
+
+2022-03-02 14:17:15 - [TEST_STEP][PASSED] - println(testCaseContext.getTestCaseId()): null
+
+2022-03-02 14:17:15 - [TEST_STEP][PASSED] - println(testCaseContext.getTestCaseStatus()): null
+
+2022-03-02 14:17:15 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2022-03-02 14:17:16 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2022-03-02 14:16:49 - [TEST_SUITE][PASSED] - Practice: Test Cases/Main Test Cases/TC27_Practice]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

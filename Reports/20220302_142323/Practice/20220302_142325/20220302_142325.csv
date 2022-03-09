@@ -1,0 +1,25 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Practice,Chrome 98.0.4758.102,,,2022-03-02 14:23:33,2022-03-02 14:23:49,16.107s,PASSED
+,,,,,,,
+Test Cases/Main Test Cases/TC01_Verify Successful Login,Chrome 98.0.4758.102,"Verify if users can login successful. 
+
+Steps:
+- Click on 'Book Appointment' button to login
+- Input username and password
+- Click on 'Login' button
+
+Expected result:
+'Appointment' section is displayed after successful login",,2022-03-02 14:23:34,2022-03-02 14:23:49,15.358s,PASSED
+Start listener action : onTestCaseStart,Chrome 98.0.4758.102,,,2022-03-02 14:23:34,2022-03-02 14:23:34,0.004s,PASSED
+Start listener action : sampleBeforeTestCase,Chrome 98.0.4758.102,,,2022-03-02 14:23:34,2022-03-02 14:23:42,7.858s,PASSED
+"comment(""Story: Login to CURA system"")",Chrome 98.0.4758.102,,,2022-03-02 14:23:42,2022-03-02 14:23:42,0.061s,PASSED
+"comment(""Given that the user has the valid login information"")",Chrome 98.0.4758.102,,,2022-03-02 14:23:42,2022-03-02 14:23:42,0.004s,PASSED
+"click(findTestObject(""Page_CuraHomepage/btn_MakeAppointment""))",Chrome 98.0.4758.102,,,2022-03-02 14:23:42,2022-03-02 14:23:43,1.125s,PASSED
+"setText(findTestObject(""Page_Login/txt_UserName""), findTestData(""TestData"").getValue(1, 1))",Chrome 98.0.4758.102,,,2022-03-02 14:23:43,2022-03-02 14:23:45,2.072s,PASSED
+"setText(findTestObject(""Page_Login/txt_Password""), findTestData(""TestData"").getValue(2, 1))",Chrome 98.0.4758.102,,,2022-03-02 14:23:45,2022-03-02 14:23:46,0.976s,PASSED
+"comment(""When he logins to CURA system"")",Chrome 98.0.4758.102,,,2022-03-02 14:23:46,2022-03-02 14:23:46,0.003s,PASSED
+"click(findTestObject(""Page_Login/btn_Login""))",Chrome 98.0.4758.102,,,2022-03-02 14:23:46,2022-03-02 14:23:48,1.169s,PASSED
+"comment(""Then he should be able to login successfully"")",Chrome 98.0.4758.102,,,2022-03-02 14:23:48,2022-03-02 14:23:48,0.003s,PASSED
+"landingPage = verifyElementPresent(findTestObject(""Page_CuraAppointment/div_Appointment""), G_Timeout)",Chrome 98.0.4758.102,,,2022-03-02 14:23:48,2022-03-02 14:23:48,0.491s,PASSED
+Start listener action : AfterTestCase,Chrome 98.0.4758.102,,,2022-03-02 14:23:48,2022-03-02 14:23:48,0.003s,PASSED
+Start listener action : sampleAfterTestCase,Chrome 98.0.4758.102,,,2022-03-02 14:23:48,2022-03-02 14:23:49,0.866s,PASSED

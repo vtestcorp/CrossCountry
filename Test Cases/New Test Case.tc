@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TC10_Verify Cura HelthCare Service Title</name>
+   <name>New Test Case</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>5adc398f-3970-44d0-bf8d-a3e14abc71c7</testCaseGuid>
+   <testCaseGuid>9cb2356c-6d9e-40bd-a47c-818ad6dc3308</testCaseGuid>
 </TestCaseEntity>

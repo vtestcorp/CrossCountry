@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Practice" time="16.107" tests="1" failures="0" errors="0">
+   <testsuite name="Practice" tests="1" failures="0" errors="0" time="16.107" skipped="0" timestamp="2022-03-02 14:23:33" hostname="DELL - DESKTOP-EI76RR5" id="Test Suites/Practice">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\DELL\\git\\CrossCountry1\\CrossCountry\\Reports\\20220302_142323\\Practice\\20220302_142325"/>
+         <property name="logFiles" value="C:\\Users\\DELL\\git\\CrossCountry1\\CrossCountry\\Reports\\20220302_142323\\Practice\\20220302_142325\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="DELL - DESKTOP-EI76RR5"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="8.2.5.208"/>
+         <property name="browser" value="Chrome 98.0.4758.102"/>
+         <property name="hostAddress" value="192.168.0.138"/>
+         <property name="sessionId" value="d78921c0d62c9efcf9059f3f51d9e7c5"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList=&quot;&quot;, isApplyToDesiredCapabilities=true }"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/Main Test Cases/TC01_Verify Successful Login" time="15.358" classname="Test Cases/Main Test Cases/TC01_Verify Successful Login" status="PASSED">
+         <system-out><![CDATA[2022-03-02 14:23:34 - [TEST_CASE][PASSED] - Test Cases/Main Test Cases/TC01_Verify Successful Login: Test Cases/Main Test Cases/TC01_Verify Successful Login
+
+2022-03-02 14:23:34 - [TEST_STEP][PASSED] - Start listener action : onTestCaseStart: null
+
+2022-03-02 14:23:34 - [TEST_STEP][PASSED] - println("Successfuuly Starting"): null
+
+2022-03-02 14:23:34 - [TEST_STEP][PASSED] - Start listener action : sampleBeforeTestCase: Browser is opened with url: 'http://demoaut.katalon.com'
+
+2022-03-02 14:23:34 - [TEST_STEP][PASSED] - println(testCaseContext.getTestCaseId()): null
+
+2022-03-02 14:23:34 - [TEST_STEP][PASSED] - println(testCaseContext.getTestCaseVariables()): null
+
+2022-03-02 14:23:34 - [TEST_STEP][PASSED] - openBrowser(G_SiteURL): Browser is opened with url: 'http://demoaut.katalon.com'
+
+2022-03-02 14:23:35 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2022-03-02 14:23:35 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2022-03-02 14:23:42 - [MESSAGE][PASSED] - Browser is opened with url: 'http://demoaut.katalon.com'
+
+2022-03-02 14:23:42 - [TEST_STEP][PASSED] - comment("Story: Login to CURA system"): Story: Login to CURA system
+
+2022-03-02 14:23:42 - [MESSAGE][INFO] - Story: Login to CURA system
+
+2022-03-02 14:23:42 - [TEST_STEP][PASSED] - comment("Given that the user has the valid login information"): Given that the user has the valid login information
+
+2022-03-02 14:23:42 - [MESSAGE][INFO] - Given that the user has the valid login information
+
+2022-03-02 14:23:42 - [TEST_STEP][PASSED] - click(findTestObject("Page_CuraHomepage/btn_MakeAppointment")): Object: 'Object Repository/Page_CuraHomepage/btn_MakeAppointment' is clicked on
+
+2022-03-02 14:23:43 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_CuraHomepage/btn_MakeAppointment' is clicked on
+
+2022-03-02 14:23:43 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Login/txt_UserName"), findTestData("TestData").getValue(1, 1)): Text 'John Doe' is set on object 'Object Repository/Page_Login/txt_UserName'
+
+2022-03-02 14:23:45 - [MESSAGE][PASSED] - Text 'John Doe' is set on object 'Object Repository/Page_Login/txt_UserName'
+
+2022-03-02 14:23:45 - [TEST_STEP][PASSED] - setText(findTestObject("Page_Login/txt_Password"), findTestData("TestData").getValue(2, 1)): Text 'ThisIsNotAPassword' is set on object 'Object Repository/Page_Login/txt_Password'
+
+2022-03-02 14:23:46 - [MESSAGE][PASSED] - Text 'ThisIsNotAPassword' is set on object 'Object Repository/Page_Login/txt_Password'
+
+2022-03-02 14:23:46 - [TEST_STEP][PASSED] - comment("When he logins to CURA system"): When he logins to CURA system
+
+2022-03-02 14:23:46 - [MESSAGE][INFO] - When he logins to CURA system
+
+2022-03-02 14:23:46 - [TEST_STEP][PASSED] - click(findTestObject("Page_Login/btn_Login")): Object: 'Object Repository/Page_Login/btn_Login' is clicked on
+
+2022-03-02 14:23:48 - [MESSAGE][PASSED] - Object: 'Object Repository/Page_Login/btn_Login' is clicked on
+
+2022-03-02 14:23:48 - [TEST_STEP][PASSED] - comment("Then he should be able to login successfully"): Then he should be able to login successfully
+
+2022-03-02 14:23:48 - [MESSAGE][INFO] - Then he should be able to login successfully
+
+2022-03-02 14:23:48 - [TEST_STEP][PASSED] - landingPage = verifyElementPresent(findTestObject("Page_CuraAppointment/div_Appointment"), G_Timeout): Object 'Object Repository/Page_CuraAppointment/div_Appointment' is present
+
+2022-03-02 14:23:48 - [MESSAGE][PASSED] - Object 'Object Repository/Page_CuraAppointment/div_Appointment' is present
+
+2022-03-02 14:23:48 - [TEST_STEP][PASSED] - Start listener action : AfterTestCase: null
+
+2022-03-02 14:23:48 - [TEST_STEP][PASSED] - println("It's in After Test Case"): null
+
+2022-03-02 14:23:48 - [TEST_STEP][PASSED] - Start listener action : sampleAfterTestCase: Browser is closed
+
+2022-03-02 14:23:48 - [TEST_STEP][PASSED] - println(testCaseContext.getTestCaseId()): null
+
+2022-03-02 14:23:48 - [TEST_STEP][PASSED] - println(testCaseContext.getTestCaseStatus()): null
+
+2022-03-02 14:23:48 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2022-03-02 14:23:49 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2022-03-02 14:23:33 - [TEST_SUITE][PASSED] - Practice: Test Cases/Main Test Cases/TC01_Verify Successful Login]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>
